@@ -9,6 +9,7 @@
 import UIKit
 import CoreImage
 import AVFoundation
+import Cartography
 
 class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     
@@ -24,6 +25,8 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup()
+        layout()
         setupAVCapture()
         // Do any additional setup after loading the view.
     }
@@ -37,8 +40,21 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         return false
     }
     
+    private func setup() {
+        previewView.frame = view.bounds
+        view.addSubview(previewView)
+        
+    }
+    
+    private func layout() {
+        constrain(previewView) {
+            $0.edges == $0.superview!.edges
+        }
+    }
+    
     private func setupAVCapture() {
         let session = AVCaptureSession()
+        session.beginConfiguration()
         session.sessionPreset = AVCaptureSessionPreset640x480
         
         // find the back facing camera
@@ -86,6 +102,7 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         rootLayer.masksToBounds = true
         previewLayer.frame = rootLayer.bounds
         rootLayer.addSublayer(previewLayer)
+        session.commitConfiguration()
         session.startRunning()
     }
 
@@ -109,7 +126,6 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         
 
         // make sure your device orientation is not locked.
-        let curDeviceOrientation = UIDevice.currentDevice().orientation
 
         let features = faceDetector.featuresInImage(
             ciImage,
@@ -124,7 +140,7 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         dispatch_async(dispatch_get_main_queue()) {
             self.drawFaces(features,
                         forVideoBox: cleanAperture,
-                        orientation: curDeviceOrientation)
+                        orientation: UIDeviceOrientation.Portrait)
         }
         
     }
