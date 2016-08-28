@@ -30,7 +30,7 @@
 		43020FD21D7290B0007CC830 /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		43020FD41D729C31007CC830 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		43020FD61D729C42007CC830 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		43020FD81D72A0D4007CC830 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		43020FD81D72A0D4007CC830 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
 		6B85DD153AF3533305A41F62 /* Pods_MeetYourFace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeetYourFace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73335AF8DCC6421E3F73CAD4 /* Pods-MeetYourFace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetYourFace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeetYourFace/Pods-MeetYourFace.debug.xcconfig"; sourceTree = "<group>"; };
 		ED320198DA59F2BBDE96EF5A /* Pods-MeetYourFace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetYourFace.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeetYourFace/Pods-MeetYourFace.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,7 +68,6 @@
 		43020FB41D7285C5007CC830 = {
 			isa = PBXGroup;
 			children = (
-				43020FD81D72A0D4007CC830 /* SettingsViewController.swift */,
 				43020FBF1D7285C5007CC830 /* MeetYourFace */,
 				43020FBE1D7285C5007CC830 /* Products */,
 				2117BA1E2D5E774047E63B98 /* Pods */,
@@ -93,6 +92,7 @@
 				43020FCC1D7285C5007CC830 /* Info.plist */,
 				43020FC01D7285C5007CC830 /* AppDelegate.swift */,
 				43020FC21D7285C5007CC830 /* LogInViewController.swift */,
+				43020FD81D72A0D4007CC830 /* SettingsViewController.swift */,
 				43020FD21D7290B0007CC830 /* TabViewController.swift */,
 				43020FD41D729C31007CC830 /* CameraViewController.swift */,
 				43020FD61D729C42007CC830 /* HomeViewController.swift */,
