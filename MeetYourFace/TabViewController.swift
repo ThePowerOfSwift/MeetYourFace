@@ -24,7 +24,7 @@ class TabViewController: UITabBarController, UITabBarControllerDelegate {
     }
     
     private func setup() {
-        view.backgroundColor = UIColor.grayColor()
+//        view.backgroundColor = UIColor.grayColor()
         let homeViewController = HomeViewController()
         let homeIcon = UITabBarItem(
             title: "Meetings",
