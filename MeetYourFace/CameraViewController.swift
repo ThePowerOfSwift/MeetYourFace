@@ -11,6 +11,17 @@ import CoreImage
 import AVFoundation
 import Cartography
 
+enum ExifOrientation: NSNumber {
+    case PHOTOS_EXIF_0ROW_TOP_0COL_LEFT = 1 //   1  =  0th row is at the top, and 0th column is on the left (THE DEFAULT).
+    case PHOTOS_EXIF_0ROW_TOP_0COL_RIGHT			= 2 //   2  =  0th row is at the top, and 0th column is on the right.
+    case PHOTOS_EXIF_0ROW_BOTTOM_0COL_RIGHT      = 3 //   3  =  0th row is at the bottom, and 0th column is on the right.
+    case PHOTOS_EXIF_0ROW_BOTTOM_0COL_LEFT       = 4 //   4  =  0th row is at the bottom, and 0th column is on the left.
+    case PHOTOS_EXIF_0ROW_LEFT_0COL_TOP          = 5 //   5  =  0th row is on the left, and 0th column is the top.
+    case PHOTOS_EXIF_0ROW_RIGHT_0COL_TOP         = 6 //   6  =  0th row is on the right, and 0th column is the top.
+    case PHOTOS_EXIF_0ROW_RIGHT_0COL_BOTTOM      = 7 //   7  =  0th row is on the right, and 0th column is the bottom.
+    case PHOTOS_EXIF_0ROW_LEFT_0COL_BOTTOM       = 8  //   8  =  0th row is on the left, and 0th column is the bottom.
+};
+
 class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     
     private let videoDataOutput = AVCaptureVideoDataOutput()
@@ -118,18 +129,18 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
     
     //AVCaptureVideoDataOutputSampleBufferDelegate
     func captureOutput(captureOutput: AVCaptureOutput!, didOutputSampleBuffer sampleBuffer: CMSampleBuffer!, fromConnection connection: AVCaptureConnection!) {
-        print("captureOutput")
         // get the image
         let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)
 //        let attachments = CMCopyDictionaryOfAttachments(kCFAllocatorDefault, sampleBuffer, kCMAttachmentMode_ShouldPropagate)
         let ciImage = CIImage.init(CVPixelBuffer: pixelBuffer!)
         
+        let curOrientation = UIDevice.currentDevice().orientation;
 
         // make sure your device orientation is not locked.
 
         let features = faceDetector.featuresInImage(
             ciImage,
-            options: [CIDetectorImageOrientation: 6])
+            options: [CIDetectorImageOrientation: exifOrientation(curOrientation) as AnyObject!])
 
         // get the clean aperture
         // the clean aperture is a rectangle that defines the portion of the encoded pixel dimensions
@@ -166,11 +177,12 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
             }
         }
         if featuresCount == 0 {
+            print("no face")
             CATransaction.commit()
             return
         }
 
-        
+        print("Found face!!!")
         let parentFrameSize = previewView.frame.size
         let gravity = previewLayer.videoGravity
         
@@ -236,6 +248,45 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
             currentFeature += 1
         }
         CATransaction.commit()
+
+    }
+    
+    private func exifOrientation(orientation: UIDeviceOrientation) -> AnyObject {
+        var exifOrientation : ExifOrientation
+        /* kCGImagePropertyOrientation values
+         The intended display orientation of the image. If present, this key is a CFNumber value with the same value as defined
+         by the TIFF and EXIF specifications -- see enumeration of integer constants.
+         The value specified where the origin (0,0) of the image is located. If not present, a value of 1 is assumed.
+         
+         used when calling featuresInImage: options: The value for this key is an integer NSNumber from 1..8 as found in kCGImagePropertyOrientation.
+         If present, the detection will be done based on that orientation but the coordinates in the returned features will still be based on those of the image. */
+        
+        switch (orientation) {
+        case .PortraitUpsideDown:  // Device oriented vertically, home button on the top
+            exifOrientation = ExifOrientation.PHOTOS_EXIF_0ROW_LEFT_0COL_BOTTOM;
+            break;
+        case .LandscapeLeft:       // Device oriented horizontally, home button on the right
+            if false {// (self.isUsingFrontFacingCamera)
+                exifOrientation = ExifOrientation.PHOTOS_EXIF_0ROW_BOTTOM_0COL_RIGHT;
+            } else {
+                exifOrientation = ExifOrientation.PHOTOS_EXIF_0ROW_TOP_0COL_LEFT;
+            }
+            break;
+        case .LandscapeRight:      // Device oriented horizontally, home button on the left
+            if false { //(self.isUsingFrontFacingCamera)
+                exifOrientation = ExifOrientation.PHOTOS_EXIF_0ROW_TOP_0COL_LEFT;
+            } else {
+                exifOrientation = ExifOrientation.PHOTOS_EXIF_0ROW_BOTTOM_0COL_RIGHT;
+            }
+            break;
+        case .Portrait:
+            exifOrientation = ExifOrientation.PHOTOS_EXIF_0ROW_RIGHT_0COL_TOP
+            break
+        default:
+            exifOrientation = ExifOrientation.PHOTOS_EXIF_0ROW_RIGHT_0COL_TOP
+            break;
+        }
+        return exifOrientation.rawValue as AnyObject
 
     }
     
