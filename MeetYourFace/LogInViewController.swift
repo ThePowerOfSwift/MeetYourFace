@@ -24,8 +24,8 @@ class LogInViewController: UIViewController {
     }
     
     func onLogInTappged(sender: UIButton) {
-        let mainViewController = MainViewController()
-        presentViewController(mainViewController, animated: false, completion: nil)
+        let tabViewController = TabViewController()
+        presentViewController(tabViewController, animated: false, completion: nil)
     }
     
     private func setup() {

@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  SettingsViewController.swift
 //  MeetYourFace
 //
 //  Created by liusy182 on 28/8/16.
@@ -7,35 +7,18 @@
 //
 
 import UIKit
-import Cartography
 
-class MainViewController: UIViewController {
+class SettingsViewController: UIViewController {
 
-    private let tabBar = UITabBar()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setup()
-        layout()
+
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    private func setup() {
-        view.backgroundColor = UIColor.grayColor()
-        //view.addSubview(tabBar)
-    }
-    
-    private func layout() {
-//        constrain(tabBar) {
-//            $0.center == $0.superview!.center
-//            $0.left == $0.superview!.left
-//            $0.right == $0.superview!.right
-//        }
     }
     
 
