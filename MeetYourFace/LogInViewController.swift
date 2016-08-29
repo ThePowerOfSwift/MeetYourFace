@@ -31,9 +31,6 @@ class LogInViewController: UIViewController {
     private func setup() {
         view.backgroundColor = UIColor.grayColor()
         logInButton.setTitle("Log In", forState: .Normal)
-        logInButton.frame = CGRect(
-            origin: CGPoint(x: 0, y: 0),
-            size: CGSize(width: 200, height: 50))
         logInButton.addTarget(
             self,
             action: #selector(LogInViewController.onLogInTappged(_:)),
@@ -43,6 +40,8 @@ class LogInViewController: UIViewController {
     
     private func layout() {
         constrain(logInButton) {
+            $0.height == 50
+            $0.width == $0.superview!.width
             $0.center == $0.superview!.center
             $0.left == $0.superview!.left
             $0.right == $0.superview!.right

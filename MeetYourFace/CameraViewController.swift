@@ -12,14 +12,14 @@ import AVFoundation
 import Cartography
 
 enum ExifOrientation: NSNumber {
-    case PHOTOS_EXIF_0ROW_TOP_0COL_LEFT = 1 //   1  =  0th row is at the top, and 0th column is on the left (THE DEFAULT).
-    case PHOTOS_EXIF_0ROW_TOP_0COL_RIGHT			= 2 //   2  =  0th row is at the top, and 0th column is on the right.
-    case PHOTOS_EXIF_0ROW_BOTTOM_0COL_RIGHT      = 3 //   3  =  0th row is at the bottom, and 0th column is on the right.
-    case PHOTOS_EXIF_0ROW_BOTTOM_0COL_LEFT       = 4 //   4  =  0th row is at the bottom, and 0th column is on the left.
-    case PHOTOS_EXIF_0ROW_LEFT_0COL_TOP          = 5 //   5  =  0th row is on the left, and 0th column is the top.
-    case PHOTOS_EXIF_0ROW_RIGHT_0COL_TOP         = 6 //   6  =  0th row is on the right, and 0th column is the top.
-    case PHOTOS_EXIF_0ROW_RIGHT_0COL_BOTTOM      = 7 //   7  =  0th row is on the right, and 0th column is the bottom.
-    case PHOTOS_EXIF_0ROW_LEFT_0COL_BOTTOM       = 8  //   8  =  0th row is on the left, and 0th column is the bottom.
+    case PHOTOS_EXIF_0ROW_TOP_0COL_LEFT         = 1     //   1  =  0th row is at the top, and 0th column is on the left (THE DEFAULT).
+    case PHOTOS_EXIF_0ROW_TOP_0COL_RIGHT		= 2 //   2  =  0th row is at the top, and 0th column is on the right.
+    case PHOTOS_EXIF_0ROW_BOTTOM_0COL_RIGHT     = 3 //   3  =  0th row is at the bottom, and 0th column is on the right.
+    case PHOTOS_EXIF_0ROW_BOTTOM_0COL_LEFT      = 4 //   4  =  0th row is at the bottom, and 0th column is on the left.
+    case PHOTOS_EXIF_0ROW_LEFT_0COL_TOP         = 5 //   5  =  0th row is on the left, and 0th column is the top.
+    case PHOTOS_EXIF_0ROW_RIGHT_0COL_TOP        = 6 //   6  =  0th row is on the right, and 0th column is the top.
+    case PHOTOS_EXIF_0ROW_RIGHT_0COL_BOTTOM     = 7 //   7  =  0th row is on the right, and 0th column is the bottom.
+    case PHOTOS_EXIF_0ROW_LEFT_0COL_BOTTOM      = 8  //   8  =  0th row is on the left, and 0th column is the bottom.
 };
 
 class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
@@ -149,21 +149,21 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         let cleanAperture = CMVideoFormatDescriptionGetCleanAperture(fdesc!, false)
         
         dispatch_async(dispatch_get_main_queue()) {
-            self.drawFaces(features,
+            self.drawFaceFocus(features,
                         forVideoBox: cleanAperture,
                         orientation: UIDeviceOrientation.Portrait)
         }
         
     }
     
-    func drawFaces(
-        features: [CIFeature]?,
+    func drawFaceFocus(
+        features: [CIFeature],
         forVideoBox clearAperture : CGRect,
         orientation: UIDeviceOrientation) {
         let sublayers = previewLayer.sublayers
         let sublayersCount = sublayers!.count
         var currentSublayer = 0
-        let featuresCount = features!.count
+        let featuresCount = features.count
         var currentFeature = 0
 
         CATransaction.begin()
@@ -182,7 +182,7 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
             return
         }
 
-        print("Found face!!!")
+       
         let parentFrameSize = previewView.frame.size
         let gravity = previewLayer.videoGravity
         
@@ -191,11 +191,14 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
             frameSize: parentFrameSize,
             apertureSize: clearAperture.size)
 
-        for ff in features! {
+        for f in features {
+            guard let ff = f as? CIFaceFeature else { return }
             // find the correct position for the square layer within the previewLayer
             // the feature box originates in the bottom left of the video frame.
             // (Bottom right if mirroring is turned on)
             var faceRect = ff.bounds
+            
+            print("Found face!!!")
             
             // flip preview width and height
             var temp = faceRect.size.width
@@ -233,15 +236,15 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
             }
             
             // create a new one if necessary
-            if (featureLayer != nil) {
+            if (featureLayer == nil) {
                 featureLayer = CALayer()
                 featureLayer!.contents = borderImage!.CGImage
                 featureLayer!.name = "FaceLayer"
                 previewLayer.addSublayer(featureLayer!)
-                //featureLayer = nil
+                featureLayer = nil
             }
-            featureLayer!.frame = faceRect
-            featureLayer!.setAffineTransform(
+            featureLayer?.frame = faceRect
+            featureLayer?.setAffineTransform(
                 CGAffineTransformMakeRotation(0))
            
             
