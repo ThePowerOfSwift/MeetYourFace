@@ -2,7 +2,7 @@
 //  SettingsViewController.swift
 //  MeetYourFace
 //
-//  Created by liusy182 on 28/8/16.
+//  Created by liusy182 on 29/8/16.
 //  Copyright © 2016 liusy182. All rights reserved.
 //
 
