@@ -192,63 +192,64 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
             apertureSize: clearAperture.size)
 
         for f in features {
-            guard let ff = f as? CIFaceFeature else { return }
-            // find the correct position for the square layer within the previewLayer
-            // the feature box originates in the bottom left of the video frame.
-            // (Bottom right if mirroring is turned on)
-            var faceRect = ff.bounds
-            
-            print("Found face!!!")
-            
-            // flip preview width and height
-            var temp = faceRect.size.width
-            faceRect.size.width = faceRect.size.height
-            faceRect.size.height = temp
-            temp = faceRect.origin.x
-            faceRect.origin.x = faceRect.origin.y
-            faceRect.origin.y = temp
-            // scale coordinates so they fit in the preview box, which may be scaled
-            let widthScaleBy = previewBox.size.width / clearAperture.size.height
-            let heightScaleBy = previewBox.size.height / clearAperture.size.width
-            faceRect.size.width *= widthScaleBy
-            faceRect.size.height *= heightScaleBy
-            faceRect.origin.x *= widthScaleBy
-            faceRect.origin.y *= heightScaleBy
+            if let ff = f as? CIFaceFeature {
+                // find the correct position for the square layer within the previewLayer
+                // the feature box originates in the bottom left of the video frame.
+                // (Bottom right if mirroring is turned on)
+                var faceRect = ff.bounds
+                
+                print("Found face!!!")
+                
+                // flip preview width and height
+                var temp = faceRect.size.width
+                faceRect.size.width = faceRect.size.height
+                faceRect.size.height = temp
+                temp = faceRect.origin.x
+                faceRect.origin.x = faceRect.origin.y
+                faceRect.origin.y = temp
+                // scale coordinates so they fit in the preview box, which may be scaled
+                let widthScaleBy = previewBox.size.width / clearAperture.size.height
+                let heightScaleBy = previewBox.size.height / clearAperture.size.width
+                faceRect.size.width *= widthScaleBy
+                faceRect.size.height *= heightScaleBy
+                faceRect.origin.x *= widthScaleBy
+                faceRect.origin.y *= heightScaleBy
 
-            if false {//isMirrored
-                faceRect = CGRectOffset(faceRect, previewBox.origin.x + previewBox.size.width - faceRect.size.width - (faceRect.origin.x * 2), previewBox.origin.y)
-            }
-            else {
-                faceRect = CGRectOffset(faceRect, previewBox.origin.x, previewBox.origin.y)
-            }
-            
-            var featureLayer: CALayer?
-            
-            // re-use an existing layer if possible
-            while currentSublayer < sublayersCount {
-                let currentLayer = sublayers![currentSublayer]
-                currentSublayer += 1
-                if currentLayer.name == "FaceLayer" {
-                    featureLayer = currentLayer
-                    currentLayer.hidden = false
-                    break
+                if false {//isMirrored
+                    faceRect = CGRectOffset(faceRect, previewBox.origin.x + previewBox.size.width - faceRect.size.width - (faceRect.origin.x * 2), previewBox.origin.y)
                 }
+                else {
+                    faceRect = CGRectOffset(faceRect, previewBox.origin.x, previewBox.origin.y)
+                }
+                
+                var featureLayer: CALayer?
+                
+                // re-use an existing layer if possible
+                while currentSublayer < sublayersCount {
+                    let currentLayer = sublayers![currentSublayer]
+                    currentSublayer += 1
+                    if currentLayer.name == "FaceLayer" {
+                        featureLayer = currentLayer
+                        currentLayer.hidden = false
+                        break
+                    }
+                }
+                
+                // create a new one if necessary
+                if (featureLayer == nil) {
+                    featureLayer = CALayer()
+                    featureLayer!.contents = borderImage!.CGImage
+                    featureLayer!.name = "FaceLayer"
+                    previewLayer.addSublayer(featureLayer!)
+                    featureLayer = nil
+                }
+                featureLayer?.frame = faceRect
+                featureLayer?.setAffineTransform(
+                    CGAffineTransformMakeRotation(0))
+               
+                
+                currentFeature += 1
             }
-            
-            // create a new one if necessary
-            if (featureLayer == nil) {
-                featureLayer = CALayer()
-                featureLayer!.contents = borderImage!.CGImage
-                featureLayer!.name = "FaceLayer"
-                previewLayer.addSublayer(featureLayer!)
-                featureLayer = nil
-            }
-            featureLayer?.frame = faceRect
-            featureLayer?.setAffineTransform(
-                CGAffineTransformMakeRotation(0))
-           
-            
-            currentFeature += 1
         }
         CATransaction.commit()
 
