@@ -11,8 +11,6 @@ import SwiftyJSON
 
 class SettingsViewController: UIViewController {
 
-    let testLabel = UILabel(frame: CGRectMake(0, 0, 200, 21))
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
@@ -26,16 +24,31 @@ class SettingsViewController: UIViewController {
     }
     
     func setup() {
-        testLabel.center = CGPointMake(160, 284)
-        testLabel.textAlignment = NSTextAlignment.Center
-        
-        if let path : String = NSBundle.mainBundle().pathForResource("meeting", ofType: "json") {
+        if let path : String = NSBundle.mainBundle().pathForResource("employee", ofType: "json") {
             if let data = NSData(contentsOfFile: path) {
                 let json = JSON(data: data)
                 
-                let name = json[0]["Name"].stringValue
-                let meetings = json[0]["Schedule"].arrayValue
-                testLabel.text = name + " has " + String(meetings.count) + " meetings"
+                for (key,subJson):(String, JSON) in json {
+                    let offset = Int(key)! - 1
+                    let name = subJson["name"].stringValue
+                    var imageName = subJson["image"].stringValue
+                    let meetings = subJson["schedule"].arrayValue
+                    
+                    let testLabel = UILabel()
+                    testLabel.frame = CGRect(x: 0, y: offset * 225 + 202, width: 200, height: 21)
+                    testLabel.text = name + " has " + String(meetings.count) + " meetings"
+                    view.addSubview(testLabel)
+                    
+                    if (imageName == "") {
+                        imageName = "Autodesklogo"
+                    }
+                    
+                    let image = UIImage(named: imageName)
+                    let imageView = UIImageView(image: image!)
+                    imageView.frame = CGRect(x: 0, y: offset * 225, width: 200, height: 200)
+                    view.addSubview(imageView)
+                }
+                
                 /*
                  for object in meetings as! [JSON] {
                  let label = UILabel(frame: CGRectMake(0, 0, 200, 21))
@@ -47,7 +60,6 @@ class SettingsViewController: UIViewController {
                 */
             }
         }
-        self.view.addSubview(testLabel)
     }
 
     /*

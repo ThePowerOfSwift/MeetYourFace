@@ -1,31 +1,37 @@
 {
   "1": {
     "name": "Siyuan Liu",
+    "image": "siyuan",
     "email": "siyuan.liu@autodesk.com",
     "schedule": ["1"]
   },
   "2": {
     "name": "Zhaoyang Ma",
+    "image": "randy",
     "email": "zhaoyang.ma@autodesk.com",
     "schedule": ["1"]
   },
   "3": {
     "name": "Peter Tang",
+    "image": "peter",
     "email": "peter.tang@autodesk.com",
     "schedule": ["1", "3", "9"]
   },
   "4": {
     "name": "Lekai Xie",
+    "image": "lekai",
     "email": "lekai.xie@autodesk.com",
     "schedule": ["1"]
   },
   "5": {
     "name": "Zhimon Chan",
+    "image": "zhimon",
     "email": "zhimon.chan@autodesk.com",
     "schedule": ["1"]
   },
   "6": {
     "name": "Minqi Zhang",
+    "image": "minqi",
     "email": "minqi.zhang@autodesk.com",
     "schedule": []
   },
