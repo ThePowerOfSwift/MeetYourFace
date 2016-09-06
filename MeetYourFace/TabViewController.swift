@@ -31,7 +31,7 @@ class TabViewController: UITabBarController, UITabBarControllerDelegate{
     
     private func setup() {
         self.view.backgroundColor = UIColor.whiteColor()
-        let homeViewController = HomeViewController()
+        let homeViewController = self.storyboard!.instantiateViewControllerWithIdentifier("HomeView") as! UITableViewController
         let homeIcon = UITabBarItem(
             title: "Meetings",
             image: UIImage(named: "Meeting-50.png"),

@@ -1,0 +1,6 @@
+framework module Pods_MeetYourFace {
+  umbrella header "Pods-MeetYourFace-umbrella.h"
+
+  export *
+  module * { export * }
+}

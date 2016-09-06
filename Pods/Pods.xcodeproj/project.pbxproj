@@ -1,0 +1,1501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0308C7F68116670BA1769F5C97AD6C53 /* LFLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BFE4D1E12543E321AC327956D4DC9B /* LFLoginController.swift */; };
+		06C16EA14052FE9D9D2D8A1DFED4704F /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B1A27D9C1512432C58DFED7081E0D /* Node.swift */; };
+		0729DED1737DCDB309394E0B59393F37 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A36AD41FBB5B10BAC11CD4322095A5 /* Dimension.swift */; };
+		0B8D49A15C0A6A1D0E2F1E225658458B /* FoldingCell-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2724463D2753EB157A8DB029DEA9DA0B /* FoldingCell-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EF9C4062003A89BEC3899922DA3DC13 /* LFLoginController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E91C5C3C1DE1A43279752EAEEBE658 /* LFLoginController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		131B086640309E45D7AB282DE92AAF9B /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5C8C8F81A1F9CFCAC52CA3962A3749 /* Context.swift */; };
+		1D419F7EC734654065EE7E10D3C1874C /* Pods-MeetYourFace-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE1DFA0D8DC861EC0A49B4256CFA2628 /* Pods-MeetYourFace-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2057FF930EF0F28E7AD548BF23BE78EE /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EBE975099086D33A6CB48BC50FCA4E /* Edge.swift */; };
+		28515F6FFAA0E2F9591A862D532F33AC /* Compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C01F2A5675895F2A6044EDA4EF818C /* Compound.swift */; };
+		2C83B0324CFC6B8817A62C4E4FFCF18F /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 209B9F37959246A85146A9C1DDF3765E /* user.png */; };
+		2CB9A2570A1F3E110E68C9DB5BA88C8F /* PositionAttribute+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55705C602EC7BF6212BD00E7D482C647 /* PositionAttribute+AppKit.swift */; };
+		340AABE2C23B29EFE857F6172820401C /* OnePasswordExtensionResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EED7730BE5D088D2D34E614512764DDF /* OnePasswordExtensionResources.bundle */; };
+		355F3E122A4FD19182581929248BE5AF /* CompoundAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F434B093166F58477BB41DF77E93A8 /* CompoundAttribute.swift */; };
+		369CA2AACEED2517C99D77D7700DFCEA /* Distribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B41E0E3D3A2AF421B3B6165B69C5D3 /* Distribute.swift */; };
+		3BCFF771A59A78D72033380FDBFBBBD4 /* ReferenceAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B34B60DA7519CE9C1B2D805B4BBAD /* ReferenceAttribute.swift */; };
+		447AC19C3E732156FCBFFF5B814A65CF /* Item+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCC11DC2A3CC64FD4C9D11218118C4A /* Item+AppKit.swift */; };
+		452C09D0CAC1F8286ABA1CE076033B23 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78789632665610A13085089A904A2579 /* Context.swift */; };
+		48ADE3FB3F30FCA5893083351449DA98 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310171E1EACB059AD3ED53C857612AE2 /* ViewUtils.swift */; };
+		4A1D0BAED9385027D8C22621CA6B5850 /* AutoCompleteTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983ED2B3790F925E643E39B1858D37E2 /* AutoCompleteTextField.swift */; };
+		4E5D54BE3F60FBCAC4D38F8BFD482590 /* FoldingCell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C18243DCF4728C49E5FAA76573CE9C /* FoldingCell-dummy.m */; };
+		4FC4B7C1D87F444F6C86633DC36F9CC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE765DB70CB37DE2F3484642EA36F420 /* Foundation.framework */; };
+		5044CA9F7CCBB02F3C294106022FCF9F /* Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFEFF4C8BE93EEC72B3D0F6BC18B59F /* Edges.swift */; };
+		584B68A7069844742AEF67ED9311FF50 /* Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9403971F787C95445DFBAC023D77954 /* Align.swift */; };
+		589A8E124DEEC2A14EE0868FB5678C56 /* EasyPeasy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B2E5360B813964138F1E9742A53859 /* EasyPeasy-dummy.m */; };
+		5C6D639A9B01FD35544BA88455275AF0 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E871C8EBFBB298CECFF71DD4006F955 /* Priority.swift */; };
+		5E6B7BB0F897F7DCFA1B889DC7632462 /* UILayoutGuide+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7091B9247B37625680A84F99498A53 /* UILayoutGuide+Easy.swift */; };
+		5F79A2B347E50A216D3C3AC38BA3FF07 /* OnePasswordExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C6BBA55A01920EB92A3DC031D6FA7ED /* OnePasswordExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65894E5CCB4249567D09DC1CE20DC5C8 /* 1Password.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1916C1BF89C1F677BC58F82071DBA5C /* 1Password.xcassets */; };
+		6B86E89A8CFF1E1AE25090573555B97C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE765DB70CB37DE2F3484642EA36F420 /* Foundation.framework */; };
+		6C695C8012EC045E11FB407873D7B037 /* 1PasswordExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB647A4EC3E8654BD47013A640E736B3 /* 1PasswordExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CC54355371489FC57AF30DDF493BA02 /* password.png in Resources */ = {isa = PBXBuildFile; fileRef = 11F9E8D19BFA374F2C7385F05BD1AF05 /* password.png */; };
+		746B1AAEA4005A7597DE1928F18840BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE765DB70CB37DE2F3484642EA36F420 /* Foundation.framework */; };
+		7476086003E76D303542DB66F67B9963 /* 1PasswordExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA70BBF12E02DA2D55AD68C72BE54B9A /* 1PasswordExtension-dummy.m */; };
+		7A67AF3A1D518438D68BDD7C4B9C4BED /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB2497896C199ED2142629FB8129288 /* MobileCoreServices.framework */; };
+		7CD04D81B5ED213A105DFC517187EB87 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F37B0B5DBCCBF81D0D2231EB3DE4685 /* Expression.swift */; };
+		7E107AAD9DEE8666CE3ED7E3B412BD0C /* FoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D6814CB0580CBB896DC21B09F240F /* FoldingCell.swift */; };
+		8378B61D28075525380201114F6E4582 /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172E7304E1C2E25A1F7C2588966CD5D /* LayoutProxy.swift */; };
+		8B05C8DF1210D319DFFC2239F41526C2 /* DimensionAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CDBB2C2768DE4DBFE46DA3DBEEC12 /* DimensionAttribute.swift */; };
+		8CE3E62C0768F0D2BABF7D144D5325D8 /* DimensionAttribute+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1690293303CB8A1A759F7C4D24B397D5 /* DimensionAttribute+UIKit.swift */; };
+		9E1776D9F7BE12BB92481AFE990B8618 /* OnePasswordExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D20C1F8F08F19CC971342D62A32FA6D /* OnePasswordExtension.framework */; };
+		A14873121045854241BF73DF57C5DE44 /* PositionAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C87EF43EA1F4A8A43C0A420E5B16071 /* PositionAttribute.swift */; };
+		A33E78335A9459EC83327D52001569C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE765DB70CB37DE2F3484642EA36F420 /* Foundation.framework */; };
+		B1391C49F150533D38DBC7B0B3A9E275 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE765DB70CB37DE2F3484642EA36F420 /* Foundation.framework */; };
+		B23E3B878363F72D1E874E46EB62FA7F /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346B1080DBB5CB5BE6B7DAA8BA2CCBCF /* Size.swift */; };
+		B90891688A088BC37455234028C2E993 /* Cartography-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE08C40C693603FE6326555303D60B8C /* Cartography-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE2FC20F5EDBAE658F688978AB12C279 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E74F386DC23D1BF0048891D282C9A0 /* Extensions.swift */; };
+		C3649839064E53A4BF767D2EF29651EF /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FF7279DD1E14933ED84C7E17D811F7 /* Priority.swift */; };
+		C40CA9CC2AFAFEFAF0BA6613E54DA204 /* NSLayoutGuide+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A543441DB1EFAC8C09DFA4463C966F /* NSLayoutGuide+Easy.swift */; };
+		C59ADBD71860D4D1BC7A7FC3E903806D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E2BB5B745B96B68B49DB2C8154880F /* UIKit.framework */; };
+		C807C90D9AC80E4A2F94C66604F51722 /* Item+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF96B4C4C47DB12CF32DDC2FF3E9346 /* Item+UIKit.swift */; };
+		C881223C845EDF270A21FE3427B681AC /* PositionAttribute+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF61DEC8178644E30B7BB4361313E6 /* PositionAttribute+UIKit.swift */; };
+		CE5A84B82017ABDA35A58DE5445C0517 /* NSView+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E24A16BC3D1A6E71FBE86CE2A31AC /* NSView+Easy.swift */; };
+		CF3FB9E98F3A8BBFD91647CAFE219700 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ADAB38D177D0E01A088D76D2AEF147 /* Constant.swift */; };
+		D2C9087C6581055C25D5559F934AF65B /* Constrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0F15F82735DE78BF5FBD20DB2179F8 /* Constrain.swift */; };
+		D3C01862D88692FA2E85A2D84345982B /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F084CFE045E651116BB550DEC95A7B /* Point.swift */; };
+		D56BD3B0ACF32790F3EF43EA3DB08016 /* Cartography-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F4D38B5ADEF6688F40B402EC22EF3B /* Cartography-dummy.m */; };
+		DBB4B0D40A81B6F0CB231A7411E87718 /* DimensionAttribute+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6FD5E3C0C8F9C3BA22165D216C4739 /* DimensionAttribute+AppKit.swift */; };
+		DC22D3484CDF6B8C8D6D1191AD15BB48 /* LFLoginController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F120D355FBFD512B37B6A8EDD40AC873 /* LFLoginController-dummy.m */; };
+		DD1D415BEDD24C1110CECDEF819EF973 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE765DB70CB37DE2F3484642EA36F420 /* Foundation.framework */; };
+		DD80DA28BB127E7D45654AE18F0C67A6 /* OnePasswordExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D5490E9516164B603A745B7FD7834C /* OnePasswordExtension.m */; };
+		E0F8BB79EDB6D15B7130B4058C885786 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = E701B5F1B23448759BDD2004A6453E1D /* Attribute.swift */; };
+		E1451AA498D7B41C4E049F5D9027B4A7 /* ConstraintGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218014242C80310BADEBAABD6D60B633 /* ConstraintGroup.swift */; };
+		EB9E85B0CE6A53DCBDE040A716B5DBF8 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56B4D8A83301C697E6C1C515936DE6 /* Property.swift */; };
+		EE94E3F06DA2F096BA43F0679567DC4B /* Coefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AFA46DD87113DBD422A5F7AB46E38 /* Coefficients.swift */; };
+		EECD4785C2348DA627E68B530A74A34B /* Pods-MeetYourFace-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 948610C9A434010C63C84AC794471106 /* Pods-MeetYourFace-dummy.m */; };
+		F469BC9885602957FCB73DD39B5B92B0 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFD73625CA68318639EB092167FD64 /* Constraint.swift */; };
+		F46BFEFC338EE6F9EC0BB44BB4CF795E /* UIView+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276925859113610AB8D9FF02FFA77726 /* UIView+Easy.swift */; };
+		F67115B61E09A788B23094FA6FA41F94 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F59C1C7EEFFF6022902D5B64CB41DA /* Item.swift */; };
+		F95ADCA0B85C6C0640372D3EFBBF1AD6 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77EB796CBB56A0B4A31F5E26D8A282D /* View.swift */; };
+		FAA0E42AA74D336F254DC0A7711AADAD /* EasyPeasy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BFDB10429505DAB5E27E718E1AD2B1D /* EasyPeasy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C50F6116A9FF86A9609FE36447EF104 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3A04698AAE4D6124C20602D622956E5;
+			remoteInfo = Cartography;
+		};
+		88E74769879C9CF03B6448CE6C3739F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6122103C9D36D99793C6B3DF6EAB959;
+			remoteInfo = "1PasswordExtension-OnePasswordExtensionResources";
+		};
+		ACA703DBDF533F92D121462A76DBB63B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27C2B7F0F221166025E1DC18D952D4FF;
+			remoteInfo = LFLoginController;
+		};
+		B9AE1B93447936B99A1F355980D09724 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E366E93B9D54B1CF40B26EC2B3C8407A;
+			remoteInfo = 1PasswordExtension;
+		};
+		CCA19B27638C8D0BB6757BACB52ABB4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 223C952D3CD291DE22488C1F159F503B;
+			remoteInfo = EasyPeasy;
+		};
+		D134ED2991BDA50424B9519385374FE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E366E93B9D54B1CF40B26EC2B3C8407A;
+			remoteInfo = 1PasswordExtension;
+		};
+		EEA747613823DF73D6448059684B8E0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44D04613A7591446E9F604C26C55657F;
+			remoteInfo = FoldingCell;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00BFE4D1E12543E321AC327956D4DC9B /* LFLoginController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LFLoginController.swift; path = Sources/LFLoginController.swift; sourceTree = "<group>"; };
+		00E91C5C3C1DE1A43279752EAEEBE658 /* LFLoginController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LFLoginController-umbrella.h"; sourceTree = "<group>"; };
+		066210870273C48288A6CEEEB24E4CFC /* FoldingCell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FoldingCell.xcconfig; sourceTree = "<group>"; };
+		083E147E377CCE1CDE612FF164E0CE82 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08F8B0DDD1B8D0F55609BC04B4128C44 /* Pods-MeetYourFace-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MeetYourFace-frameworks.sh"; sourceTree = "<group>"; };
+		0BDD8CC4CC990FCED3F6D81C9274F03E /* Pods-MeetYourFace-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MeetYourFace-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0BFDB10429505DAB5E27E718E1AD2B1D /* EasyPeasy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyPeasy-umbrella.h"; sourceTree = "<group>"; };
+		10B41E0E3D3A2AF421B3B6165B69C5D3 /* Distribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Distribute.swift; path = Cartography/Distribute.swift; sourceTree = "<group>"; };
+		11F9E8D19BFA374F2C7385F05BD1AF05 /* password.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = password.png; path = Resources/password.png; sourceTree = "<group>"; };
+		1690293303CB8A1A759F7C4D24B397D5 /* DimensionAttribute+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DimensionAttribute+UIKit.swift"; path = "EasyPeasy/DimensionAttribute+UIKit.swift"; sourceTree = "<group>"; };
+		16ADAB38D177D0E01A088D76D2AEF147 /* Constant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = EasyPeasy/Constant.swift; sourceTree = "<group>"; };
+		1ABEFE121E47C533C2CF16DB9FE3964E /* LFLoginController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LFLoginController.modulemap; sourceTree = "<group>"; };
+		209B9F37959246A85146A9C1DDF3765E /* user.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = user.png; path = Resources/user.png; sourceTree = "<group>"; };
+		2172E7304E1C2E25A1F7C2588966CD5D /* LayoutProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutProxy.swift; path = Cartography/LayoutProxy.swift; sourceTree = "<group>"; };
+		218014242C80310BADEBAABD6D60B633 /* ConstraintGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintGroup.swift; path = Cartography/ConstraintGroup.swift; sourceTree = "<group>"; };
+		2724463D2753EB157A8DB029DEA9DA0B /* FoldingCell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FoldingCell-umbrella.h"; sourceTree = "<group>"; };
+		274CDBB2C2768DE4DBFE46DA3DBEEC12 /* DimensionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DimensionAttribute.swift; path = EasyPeasy/DimensionAttribute.swift; sourceTree = "<group>"; };
+		276925859113610AB8D9FF02FFA77726 /* UIView+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Easy.swift"; path = "EasyPeasy/UIView+Easy.swift"; sourceTree = "<group>"; };
+		2CBD3B3DD6110810CC9771B5383790F5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		310171E1EACB059AD3ED53C857612AE2 /* ViewUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewUtils.swift; path = Cartography/ViewUtils.swift; sourceTree = "<group>"; };
+		346B1080DBB5CB5BE6B7DAA8BA2CCBCF /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = Cartography/Size.swift; sourceTree = "<group>"; };
+		357D57DA92D354677186759F308FF3E7 /* EasyPeasy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = EasyPeasy.modulemap; sourceTree = "<group>"; };
+		35F9443E56A7E15327ABB7E521919CBC /* Pods-MeetYourFace.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MeetYourFace.modulemap"; sourceTree = "<group>"; };
+		36C01F2A5675895F2A6044EDA4EF818C /* Compound.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compound.swift; path = Cartography/Compound.swift; sourceTree = "<group>"; };
+		3C5CE1C1193149D5C7B9D6C525EC0038 /* EasyPeasy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyPeasy.xcconfig; sourceTree = "<group>"; };
+		3C6BBA55A01920EB92A3DC031D6FA7ED /* OnePasswordExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OnePasswordExtension.h; sourceTree = "<group>"; };
+		3C87EF43EA1F4A8A43C0A420E5B16071 /* PositionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PositionAttribute.swift; path = EasyPeasy/PositionAttribute.swift; sourceTree = "<group>"; };
+		3F46552981561C5C6FC9B3485DDE66F8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42F8B04E9704AE2B18BC20AC514C7B7B /* LFLoginController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LFLoginController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4599F7B0662B9F807B4C615F81DAE9EE /* LFLoginController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LFLoginController.xcconfig; sourceTree = "<group>"; };
+		479D6814CB0580CBB896DC21B09F240F /* FoldingCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoldingCell.swift; path = FoldingCell/FoldingCell/FoldingCell/FoldingCell.swift; sourceTree = "<group>"; };
+		4891F49CE39D8E4158E798ACBF59B709 /* FoldingCell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FoldingCell-prefix.pch"; sourceTree = "<group>"; };
+		4D20C1F8F08F19CC971342D62A32FA6D /* OnePasswordExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnePasswordExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E871C8EBFBB298CECFF71DD4006F955 /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = EasyPeasy/Priority.swift; sourceTree = "<group>"; };
+		503B34B60DA7519CE9C1B2D805B4BBAD /* ReferenceAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceAttribute.swift; path = EasyPeasy/ReferenceAttribute.swift; sourceTree = "<group>"; };
+		54DF61DEC8178644E30B7BB4361313E6 /* PositionAttribute+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PositionAttribute+UIKit.swift"; path = "EasyPeasy/PositionAttribute+UIKit.swift"; sourceTree = "<group>"; };
+		55705C602EC7BF6212BD00E7D482C647 /* PositionAttribute+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PositionAttribute+AppKit.swift"; path = "EasyPeasy/PositionAttribute+AppKit.swift"; sourceTree = "<group>"; };
+		56A543441DB1EFAC8C09DFA4463C966F /* NSLayoutGuide+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutGuide+Easy.swift"; path = "EasyPeasy/NSLayoutGuide+Easy.swift"; sourceTree = "<group>"; };
+		585B1A27D9C1512432C58DFED7081E0D /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = EasyPeasy/Node.swift; sourceTree = "<group>"; };
+		59F4D38B5ADEF6688F40B402EC22EF3B /* Cartography-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cartography-dummy.m"; sourceTree = "<group>"; };
+		5A21A0B456E4C02B6BE335FFA978D8CB /* Pods-MeetYourFace-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MeetYourFace-acknowledgements.plist"; sourceTree = "<group>"; };
+		5CBBBC969A28BF6DA38FC20B94D8790C /* Pods-MeetYourFace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MeetYourFace.release.xcconfig"; sourceTree = "<group>"; };
+		5D0F15F82735DE78BF5FBD20DB2179F8 /* Constrain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constrain.swift; path = Cartography/Constrain.swift; sourceTree = "<group>"; };
+		5F37B0B5DBCCBF81D0D2231EB3DE4685 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Cartography/Expression.swift; sourceTree = "<group>"; };
+		6BF2804495FB3BB4F0AA88EBEA821B98 /* Cartography-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-prefix.pch"; sourceTree = "<group>"; };
+		710E24A16BC3D1A6E71FBE86CE2A31AC /* NSView+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSView+Easy.swift"; path = "EasyPeasy/NSView+Easy.swift"; sourceTree = "<group>"; };
+		71E616A0749BB11D0E8AF4AF11B726D1 /* Pods_MeetYourFace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeetYourFace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72E74F386DC23D1BF0048891D282C9A0 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Cartography/Extensions.swift; sourceTree = "<group>"; };
+		74B8E31FB3783EABB1597D66C1D8FD69 /* ResourceBundle-OnePasswordExtensionResources-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-OnePasswordExtensionResources-Info.plist"; sourceTree = "<group>"; };
+		75151615FDEF3C3C5AB6387A08887516 /* Cartography.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cartography.xcconfig; sourceTree = "<group>"; };
+		75FD8B135E3921C9B37F66A178FC3209 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78336A639A2B03B24D5669708E2AA4CC /* Cartography.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Cartography.modulemap; sourceTree = "<group>"; };
+		78789632665610A13085089A904A2579 /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = Cartography/Context.swift; sourceTree = "<group>"; };
+		7B126151DD2BB457C6F87E468A32767C /* EasyPeasy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyPeasy-prefix.pch"; sourceTree = "<group>"; };
+		7B35907D84ECA4F12F9BBD6F45B56822 /* 1PasswordExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = 1PasswordExtension.modulemap; sourceTree = "<group>"; };
+		7BD37DD01318CEF83ADEE5044394C1FF /* 1PasswordExtension.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = 1PasswordExtension.xcconfig; sourceTree = "<group>"; };
+		7C6205F754334DA8FA7054B0C87FD3E4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81F434B093166F58477BB41DF77E93A8 /* CompoundAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompoundAttribute.swift; path = EasyPeasy/CompoundAttribute.swift; sourceTree = "<group>"; };
+		842AFA46DD87113DBD422A5F7AB46E38 /* Coefficients.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coefficients.swift; path = Cartography/Coefficients.swift; sourceTree = "<group>"; };
+		89C18243DCF4728C49E5FAA76573CE9C /* FoldingCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FoldingCell-dummy.m"; sourceTree = "<group>"; };
+		8EB1025F5793FE7E2BC7166C2B5F8D50 /* OnePasswordExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnePasswordExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		948610C9A434010C63C84AC794471106 /* Pods-MeetYourFace-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MeetYourFace-dummy.m"; sourceTree = "<group>"; };
+		983ED2B3790F925E643E39B1858D37E2 /* AutoCompleteTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoCompleteTextField.swift; path = Sources/AutoCompleteTextField.swift; sourceTree = "<group>"; };
+		9DCC11DC2A3CC64FD4C9D11218118C4A /* Item+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Item+AppKit.swift"; path = "EasyPeasy/Item+AppKit.swift"; sourceTree = "<group>"; };
+		9FF96B4C4C47DB12CF32DDC2FF3E9346 /* Item+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Item+UIKit.swift"; path = "EasyPeasy/Item+UIKit.swift"; sourceTree = "<group>"; };
+		A9403971F787C95445DFBAC023D77954 /* Align.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Align.swift; path = Cartography/Align.swift; sourceTree = "<group>"; };
+		AE3D754071137AF7B7494B656696FD01 /* LFLoginController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LFLoginController-prefix.pch"; sourceTree = "<group>"; };
+		AE765DB70CB37DE2F3484642EA36F420 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AF2CF861ADFFAB908EE233472C1572E0 /* Pods-MeetYourFace-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MeetYourFace-resources.sh"; sourceTree = "<group>"; };
+		B969AD10DF3DD2F631CEDBC255EAD80F /* Pods-MeetYourFace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MeetYourFace.debug.xcconfig"; sourceTree = "<group>"; };
+		BA56B4D8A83301C697E6C1C515936DE6 /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = Cartography/Property.swift; sourceTree = "<group>"; };
+		BC46A90217466328471D3AD0ED4E905F /* FoldingCell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FoldingCell.modulemap; sourceTree = "<group>"; };
+		BE1DFA0D8DC861EC0A49B4256CFA2628 /* Pods-MeetYourFace-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MeetYourFace-umbrella.h"; sourceTree = "<group>"; };
+		C4E2BB5B745B96B68B49DB2C8154880F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CA70BBF12E02DA2D55AD68C72BE54B9A /* 1PasswordExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "1PasswordExtension-dummy.m"; sourceTree = "<group>"; };
+		CC070389ECBE2614BF490FD92457EF8A /* FoldingCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FoldingCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1916C1BF89C1F677BC58F82071DBA5C /* 1Password.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = 1Password.xcassets; sourceTree = "<group>"; };
+		D2B788198F7526DC846E71C76F91260E /* Cartography.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cartography.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7F421D1D52586FBEA980A71195A385A /* 1PasswordExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "1PasswordExtension-prefix.pch"; sourceTree = "<group>"; };
+		D8FF7279DD1E14933ED84C7E17D811F7 /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = Cartography/Priority.swift; sourceTree = "<group>"; };
+		DA5C8C8F81A1F9CFCAC52CA3962A3749 /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = EasyPeasy/Context.swift; sourceTree = "<group>"; };
+		DBC482F5F539E4DDA41692ABD5939EE5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE08C40C693603FE6326555303D60B8C /* Cartography-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-umbrella.h"; sourceTree = "<group>"; };
+		E2EFD73625CA68318639EB092167FD64 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Cartography/Constraint.swift; sourceTree = "<group>"; };
+		E6D230F422E815E02DB5B31213CF157F /* EasyPeasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyPeasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E701B5F1B23448759BDD2004A6453E1D /* Attribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attribute.swift; path = EasyPeasy/Attribute.swift; sourceTree = "<group>"; };
+		E7EBE975099086D33A6CB48BC50FCA4E /* Edge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edge.swift; path = Cartography/Edge.swift; sourceTree = "<group>"; };
+		E9F084CFE045E651116BB550DEC95A7B /* Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Point.swift; path = Cartography/Point.swift; sourceTree = "<group>"; };
+		EB647A4EC3E8654BD47013A640E736B3 /* 1PasswordExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "1PasswordExtension-umbrella.h"; sourceTree = "<group>"; };
+		EED7730BE5D088D2D34E614512764DDF /* OnePasswordExtensionResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnePasswordExtensionResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6FD5E3C0C8F9C3BA22165D216C4739 /* DimensionAttribute+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DimensionAttribute+AppKit.swift"; path = "EasyPeasy/DimensionAttribute+AppKit.swift"; sourceTree = "<group>"; };
+		F120D355FBFD512B37B6A8EDD40AC873 /* LFLoginController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LFLoginController-dummy.m"; sourceTree = "<group>"; };
+		F1D5490E9516164B603A745B7FD7834C /* OnePasswordExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OnePasswordExtension.m; sourceTree = "<group>"; };
+		F2F59C1C7EEFFF6022902D5B64CB41DA /* Item.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Item.swift; path = EasyPeasy/Item.swift; sourceTree = "<group>"; };
+		F77EB796CBB56A0B4A31F5E26D8A282D /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Cartography/View.swift; sourceTree = "<group>"; };
+		F7A36AD41FBB5B10BAC11CD4322095A5 /* Dimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dimension.swift; path = Cartography/Dimension.swift; sourceTree = "<group>"; };
+		F9B2E5360B813964138F1E9742A53859 /* EasyPeasy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyPeasy-dummy.m"; sourceTree = "<group>"; };
+		FA7091B9247B37625680A84F99498A53 /* UILayoutGuide+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutGuide+Easy.swift"; path = "EasyPeasy/UILayoutGuide+Easy.swift"; sourceTree = "<group>"; };
+		FBFEFF4C8BE93EEC72B3D0F6BC18B59F /* Edges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edges.swift; path = Cartography/Edges.swift; sourceTree = "<group>"; };
+		FCB2497896C199ED2142629FB8129288 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32D7432B908C441723927B228CE70A8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD1D415BEDD24C1110CECDEF819EF973 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A9EB82F8AF0A5FE0F9D94B3B9645993 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1391C49F150533D38DBC7B0B3A9E275 /* Foundation.framework in Frameworks */,
+				9E1776D9F7BE12BB92481AFE990B8618 /* OnePasswordExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		429A34DF3BBD7321C9C7D6FBF5F1E3FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A33E78335A9459EC83327D52001569C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46259089E40A08936211A8F66EA0B175 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B86E89A8CFF1E1AE25090573555B97C /* Foundation.framework in Frameworks */,
+				7A67AF3A1D518438D68BDD7C4B9C4BED /* MobileCoreServices.framework in Frameworks */,
+				C59ADBD71860D4D1BC7A7FC3E903806D /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7EABAC035C9A2148669BD51C02F0D93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				746B1AAEA4005A7597DE1928F18840BF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B590857022EFCCD3810695DACE6DC5E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D980E68EA8843DFC26F5A3C4CC8D03AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FC4B7C1D87F444F6C86633DC36F9CC5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12E66C5DD56F4970977EADE4B8BF73A0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				357D57DA92D354677186759F308FF3E7 /* EasyPeasy.modulemap */,
+				3C5CE1C1193149D5C7B9D6C525EC0038 /* EasyPeasy.xcconfig */,
+				F9B2E5360B813964138F1E9742A53859 /* EasyPeasy-dummy.m */,
+				7B126151DD2BB457C6F87E468A32767C /* EasyPeasy-prefix.pch */,
+				0BFDB10429505DAB5E27E718E1AD2B1D /* EasyPeasy-umbrella.h */,
+				7C6205F754334DA8FA7054B0C87FD3E4 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/EasyPeasy";
+			sourceTree = "<group>";
+		};
+		1881D1D19F882344664D1DF339E55AB5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				11F9E8D19BFA374F2C7385F05BD1AF05 /* password.png */,
+				209B9F37959246A85146A9C1DDF3765E /* user.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1C935AE6D4347C9B377B93414070E7F6 /* LFLoginController */ = {
+			isa = PBXGroup;
+			children = (
+				983ED2B3790F925E643E39B1858D37E2 /* AutoCompleteTextField.swift */,
+				00BFE4D1E12543E321AC327956D4DC9B /* LFLoginController.swift */,
+				1881D1D19F882344664D1DF339E55AB5 /* Resources */,
+				7466C91C69E143CCC2F130991F33F247 /* Support Files */,
+			);
+			path = LFLoginController;
+			sourceTree = "<group>";
+		};
+		325BB99DF2D84EF969B330FA2210B705 /* 1PasswordExtension */ = {
+			isa = PBXGroup;
+			children = (
+				3C6BBA55A01920EB92A3DC031D6FA7ED /* OnePasswordExtension.h */,
+				F1D5490E9516164B603A745B7FD7834C /* OnePasswordExtension.m */,
+				3AF45B0EFBC354803218D876A774ED82 /* Resources */,
+				F1500D3D1676C1E6A7AAF7C313C925FC /* Support Files */,
+			);
+			path = 1PasswordExtension;
+			sourceTree = "<group>";
+		};
+		38A1810C282400B947F5F90A9498B7D5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AE765DB70CB37DE2F3484642EA36F420 /* Foundation.framework */,
+				FCB2497896C199ED2142629FB8129288 /* MobileCoreServices.framework */,
+				C4E2BB5B745B96B68B49DB2C8154880F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3AF45B0EFBC354803218D876A774ED82 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D1916C1BF89C1F677BC58F82071DBA5C /* 1Password.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3BE5163B4B3C9F018AF3C5C86332389E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2B788198F7526DC846E71C76F91260E /* Cartography.framework */,
+				E6D230F422E815E02DB5B31213CF157F /* EasyPeasy.framework */,
+				CC070389ECBE2614BF490FD92457EF8A /* FoldingCell.framework */,
+				42F8B04E9704AE2B18BC20AC514C7B7B /* LFLoginController.framework */,
+				8EB1025F5793FE7E2BC7166C2B5F8D50 /* OnePasswordExtension.framework */,
+				EED7730BE5D088D2D34E614512764DDF /* OnePasswordExtensionResources.bundle */,
+				71E616A0749BB11D0E8AF4AF11B726D1 /* Pods_MeetYourFace.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E029C64418C451341D4D0660A2CBA21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D20C1F8F08F19CC971342D62A32FA6D /* OnePasswordExtension.framework */,
+				38A1810C282400B947F5F90A9498B7D5 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6601FA08BAE029797CD23528CE6BB36F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC46A90217466328471D3AD0ED4E905F /* FoldingCell.modulemap */,
+				066210870273C48288A6CEEEB24E4CFC /* FoldingCell.xcconfig */,
+				89C18243DCF4728C49E5FAA76573CE9C /* FoldingCell-dummy.m */,
+				4891F49CE39D8E4158E798ACBF59B709 /* FoldingCell-prefix.pch */,
+				2724463D2753EB157A8DB029DEA9DA0B /* FoldingCell-umbrella.h */,
+				3F46552981561C5C6FC9B3485DDE66F8 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FoldingCell";
+			sourceTree = "<group>";
+		};
+		7466C91C69E143CCC2F130991F33F247 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBC482F5F539E4DDA41692ABD5939EE5 /* Info.plist */,
+				1ABEFE121E47C533C2CF16DB9FE3964E /* LFLoginController.modulemap */,
+				4599F7B0662B9F807B4C615F81DAE9EE /* LFLoginController.xcconfig */,
+				F120D355FBFD512B37B6A8EDD40AC873 /* LFLoginController-dummy.m */,
+				AE3D754071137AF7B7494B656696FD01 /* LFLoginController-prefix.pch */,
+				00E91C5C3C1DE1A43279752EAEEBE658 /* LFLoginController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LFLoginController";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				5E029C64418C451341D4D0660A2CBA21 /* Frameworks */,
+				A552B444F4C39ACFC60E8F62BB1826C5 /* Pods */,
+				3BE5163B4B3C9F018AF3C5C86332389E /* Products */,
+				88B7D746E119F7FF32DBF7A7F88253CF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		88B7D746E119F7FF32DBF7A7F88253CF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD515FD90B259303605421B4358798F4 /* Pods-MeetYourFace */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		93B4C3F2923CC4048B1FF08A275A7BC9 /* FoldingCell */ = {
+			isa = PBXGroup;
+			children = (
+				479D6814CB0580CBB896DC21B09F240F /* FoldingCell.swift */,
+				6601FA08BAE029797CD23528CE6BB36F /* Support Files */,
+			);
+			path = FoldingCell;
+			sourceTree = "<group>";
+		};
+		9B8A9382FDFCAAC76BBF2B827EDC30AE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				78336A639A2B03B24D5669708E2AA4CC /* Cartography.modulemap */,
+				75151615FDEF3C3C5AB6387A08887516 /* Cartography.xcconfig */,
+				59F4D38B5ADEF6688F40B402EC22EF3B /* Cartography-dummy.m */,
+				6BF2804495FB3BB4F0AA88EBEA821B98 /* Cartography-prefix.pch */,
+				DE08C40C693603FE6326555303D60B8C /* Cartography-umbrella.h */,
+				2CBD3B3DD6110810CC9771B5383790F5 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Cartography";
+			sourceTree = "<group>";
+		};
+		A552B444F4C39ACFC60E8F62BB1826C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				325BB99DF2D84EF969B330FA2210B705 /* 1PasswordExtension */,
+				B630A118CFB0AD4D845288F17BC0F1C8 /* Cartography */,
+				A8BB26EC4007E7002FDD24F71413C5E5 /* EasyPeasy */,
+				93B4C3F2923CC4048B1FF08A275A7BC9 /* FoldingCell */,
+				1C935AE6D4347C9B377B93414070E7F6 /* LFLoginController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A8BB26EC4007E7002FDD24F71413C5E5 /* EasyPeasy */ = {
+			isa = PBXGroup;
+			children = (
+				E701B5F1B23448759BDD2004A6453E1D /* Attribute.swift */,
+				81F434B093166F58477BB41DF77E93A8 /* CompoundAttribute.swift */,
+				16ADAB38D177D0E01A088D76D2AEF147 /* Constant.swift */,
+				DA5C8C8F81A1F9CFCAC52CA3962A3749 /* Context.swift */,
+				274CDBB2C2768DE4DBFE46DA3DBEEC12 /* DimensionAttribute.swift */,
+				EF6FD5E3C0C8F9C3BA22165D216C4739 /* DimensionAttribute+AppKit.swift */,
+				1690293303CB8A1A759F7C4D24B397D5 /* DimensionAttribute+UIKit.swift */,
+				F2F59C1C7EEFFF6022902D5B64CB41DA /* Item.swift */,
+				9DCC11DC2A3CC64FD4C9D11218118C4A /* Item+AppKit.swift */,
+				9FF96B4C4C47DB12CF32DDC2FF3E9346 /* Item+UIKit.swift */,
+				585B1A27D9C1512432C58DFED7081E0D /* Node.swift */,
+				56A543441DB1EFAC8C09DFA4463C966F /* NSLayoutGuide+Easy.swift */,
+				710E24A16BC3D1A6E71FBE86CE2A31AC /* NSView+Easy.swift */,
+				3C87EF43EA1F4A8A43C0A420E5B16071 /* PositionAttribute.swift */,
+				55705C602EC7BF6212BD00E7D482C647 /* PositionAttribute+AppKit.swift */,
+				54DF61DEC8178644E30B7BB4361313E6 /* PositionAttribute+UIKit.swift */,
+				4E871C8EBFBB298CECFF71DD4006F955 /* Priority.swift */,
+				503B34B60DA7519CE9C1B2D805B4BBAD /* ReferenceAttribute.swift */,
+				FA7091B9247B37625680A84F99498A53 /* UILayoutGuide+Easy.swift */,
+				276925859113610AB8D9FF02FFA77726 /* UIView+Easy.swift */,
+				12E66C5DD56F4970977EADE4B8BF73A0 /* Support Files */,
+			);
+			path = EasyPeasy;
+			sourceTree = "<group>";
+		};
+		B630A118CFB0AD4D845288F17BC0F1C8 /* Cartography */ = {
+			isa = PBXGroup;
+			children = (
+				A9403971F787C95445DFBAC023D77954 /* Align.swift */,
+				842AFA46DD87113DBD422A5F7AB46E38 /* Coefficients.swift */,
+				36C01F2A5675895F2A6044EDA4EF818C /* Compound.swift */,
+				5D0F15F82735DE78BF5FBD20DB2179F8 /* Constrain.swift */,
+				E2EFD73625CA68318639EB092167FD64 /* Constraint.swift */,
+				218014242C80310BADEBAABD6D60B633 /* ConstraintGroup.swift */,
+				78789632665610A13085089A904A2579 /* Context.swift */,
+				F7A36AD41FBB5B10BAC11CD4322095A5 /* Dimension.swift */,
+				10B41E0E3D3A2AF421B3B6165B69C5D3 /* Distribute.swift */,
+				E7EBE975099086D33A6CB48BC50FCA4E /* Edge.swift */,
+				FBFEFF4C8BE93EEC72B3D0F6BC18B59F /* Edges.swift */,
+				5F37B0B5DBCCBF81D0D2231EB3DE4685 /* Expression.swift */,
+				72E74F386DC23D1BF0048891D282C9A0 /* Extensions.swift */,
+				2172E7304E1C2E25A1F7C2588966CD5D /* LayoutProxy.swift */,
+				E9F084CFE045E651116BB550DEC95A7B /* Point.swift */,
+				D8FF7279DD1E14933ED84C7E17D811F7 /* Priority.swift */,
+				BA56B4D8A83301C697E6C1C515936DE6 /* Property.swift */,
+				346B1080DBB5CB5BE6B7DAA8BA2CCBCF /* Size.swift */,
+				F77EB796CBB56A0B4A31F5E26D8A282D /* View.swift */,
+				310171E1EACB059AD3ED53C857612AE2 /* ViewUtils.swift */,
+				9B8A9382FDFCAAC76BBF2B827EDC30AE /* Support Files */,
+			);
+			path = Cartography;
+			sourceTree = "<group>";
+		};
+		CD515FD90B259303605421B4358798F4 /* Pods-MeetYourFace */ = {
+			isa = PBXGroup;
+			children = (
+				083E147E377CCE1CDE612FF164E0CE82 /* Info.plist */,
+				35F9443E56A7E15327ABB7E521919CBC /* Pods-MeetYourFace.modulemap */,
+				0BDD8CC4CC990FCED3F6D81C9274F03E /* Pods-MeetYourFace-acknowledgements.markdown */,
+				5A21A0B456E4C02B6BE335FFA978D8CB /* Pods-MeetYourFace-acknowledgements.plist */,
+				948610C9A434010C63C84AC794471106 /* Pods-MeetYourFace-dummy.m */,
+				08F8B0DDD1B8D0F55609BC04B4128C44 /* Pods-MeetYourFace-frameworks.sh */,
+				AF2CF861ADFFAB908EE233472C1572E0 /* Pods-MeetYourFace-resources.sh */,
+				BE1DFA0D8DC861EC0A49B4256CFA2628 /* Pods-MeetYourFace-umbrella.h */,
+				B969AD10DF3DD2F631CEDBC255EAD80F /* Pods-MeetYourFace.debug.xcconfig */,
+				5CBBBC969A28BF6DA38FC20B94D8790C /* Pods-MeetYourFace.release.xcconfig */,
+			);
+			name = "Pods-MeetYourFace";
+			path = "Target Support Files/Pods-MeetYourFace";
+			sourceTree = "<group>";
+		};
+		F1500D3D1676C1E6A7AAF7C313C925FC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B35907D84ECA4F12F9BBD6F45B56822 /* 1PasswordExtension.modulemap */,
+				7BD37DD01318CEF83ADEE5044394C1FF /* 1PasswordExtension.xcconfig */,
+				CA70BBF12E02DA2D55AD68C72BE54B9A /* 1PasswordExtension-dummy.m */,
+				D7F421D1D52586FBEA980A71195A385A /* 1PasswordExtension-prefix.pch */,
+				EB647A4EC3E8654BD47013A640E736B3 /* 1PasswordExtension-umbrella.h */,
+				75FD8B135E3921C9B37F66A178FC3209 /* Info.plist */,
+				74B8E31FB3783EABB1597D66C1D8FD69 /* ResourceBundle-OnePasswordExtensionResources-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/1PasswordExtension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		30803F7CB8476646110F80B7596A31BA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF9C4062003A89BEC3899922DA3DC13 /* LFLoginController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D71AE0C9B7C2135A7EAB8DC44CB63F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B8D49A15C0A6A1D0E2F1E225658458B /* FoldingCell-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		514705BF944036B79FA99816C564643C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B90891688A088BC37455234028C2E993 /* Cartography-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C758E196E16E1FFD540D29A0B6ECC2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D419F7EC734654065EE7E10D3C1874C /* Pods-MeetYourFace-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9BD235C40AF7BA7F4BD7E96586BB6C5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C695C8012EC045E11FB407873D7B037 /* 1PasswordExtension-umbrella.h in Headers */,
+				5F79A2B347E50A216D3C3AC38BA3FF07 /* OnePasswordExtension.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F074EEFD7DA245B25E2A27E4A865EF58 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA0E42AA74D336F254DC0A7711AADAD /* EasyPeasy-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		223C952D3CD291DE22488C1F159F503B /* EasyPeasy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E139BA01DA61BDA37DB2989E5338681B /* Build configuration list for PBXNativeTarget "EasyPeasy" */;
+			buildPhases = (
+				EAEB94E9D8D0C8A2C4804D73C466C6A0 /* Sources */,
+				A7EABAC035C9A2148669BD51C02F0D93 /* Frameworks */,
+				F074EEFD7DA245B25E2A27E4A865EF58 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyPeasy;
+			productName = EasyPeasy;
+			productReference = E6D230F422E815E02DB5B31213CF157F /* EasyPeasy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		27C2B7F0F221166025E1DC18D952D4FF /* LFLoginController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75AFA9AAD12F5E4BF0667D9ECDDD34F0 /* Build configuration list for PBXNativeTarget "LFLoginController" */;
+			buildPhases = (
+				FF337A2025523F9EA83AB2356DDF3890 /* Sources */,
+				3A9EB82F8AF0A5FE0F9D94B3B9645993 /* Frameworks */,
+				9B95F507847F616D1B512063F0E5171D /* Resources */,
+				30803F7CB8476646110F80B7596A31BA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				886AEBC998161AFF13BA02E170C0F111 /* PBXTargetDependency */,
+			);
+			name = LFLoginController;
+			productName = LFLoginController;
+			productReference = 42F8B04E9704AE2B18BC20AC514C7B7B /* LFLoginController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		44D04613A7591446E9F604C26C55657F /* FoldingCell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70099CD97642C85A604FF6FCE4E7E8B0 /* Build configuration list for PBXNativeTarget "FoldingCell" */;
+			buildPhases = (
+				99A53D1B239C11E7C2EDB5FEFAE1BF55 /* Sources */,
+				32D7432B908C441723927B228CE70A8A /* Frameworks */,
+				4D71AE0C9B7C2135A7EAB8DC44CB63F3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoldingCell;
+			productName = FoldingCell;
+			productReference = CC070389ECBE2614BF490FD92457EF8A /* FoldingCell.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8A73F2A02A5A7EA1A6F84AACDDBC9A3E /* Pods-MeetYourFace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4430D4A98D8B596A97B46F8C9A0FA3CB /* Build configuration list for PBXNativeTarget "Pods-MeetYourFace" */;
+			buildPhases = (
+				F1534A83DC77AAC2EE7605F349A746D2 /* Sources */,
+				D980E68EA8843DFC26F5A3C4CC8D03AE /* Frameworks */,
+				66C758E196E16E1FFD540D29A0B6ECC2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D10DF7F6D9E863E76AC958B9CF820637 /* PBXTargetDependency */,
+				4E225D38B290838D598707AE05FE13A9 /* PBXTargetDependency */,
+				4F94B4D18E5D10541570CD441CA21EC8 /* PBXTargetDependency */,
+				BC5316265B9133C7C3A737473914AA21 /* PBXTargetDependency */,
+				7D83B038829C40E42E63D338931E2213 /* PBXTargetDependency */,
+			);
+			name = "Pods-MeetYourFace";
+			productName = "Pods-MeetYourFace";
+			productReference = 71E616A0749BB11D0E8AF4AF11B726D1 /* Pods_MeetYourFace.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C3A04698AAE4D6124C20602D622956E5 /* Cartography */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B22DC939D187391042315573DBEE7623 /* Build configuration list for PBXNativeTarget "Cartography" */;
+			buildPhases = (
+				B962ED42E882856B9D168260BB18AE95 /* Sources */,
+				429A34DF3BBD7321C9C7D6FBF5F1E3FB /* Frameworks */,
+				514705BF944036B79FA99816C564643C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cartography;
+			productName = Cartography;
+			productReference = D2B788198F7526DC846E71C76F91260E /* Cartography.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D6122103C9D36D99793C6B3DF6EAB959 /* 1PasswordExtension-OnePasswordExtensionResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7D2C79CF66FE8574AAD47094F69E620 /* Build configuration list for PBXNativeTarget "1PasswordExtension-OnePasswordExtensionResources" */;
+			buildPhases = (
+				D456875D980FE3F6706B78E27B56ECA8 /* Sources */,
+				B590857022EFCCD3810695DACE6DC5E1 /* Frameworks */,
+				7009D0ADE9A0FB5ED4D0EBDCC7FA8D7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "1PasswordExtension-OnePasswordExtensionResources";
+			productName = "1PasswordExtension-OnePasswordExtensionResources";
+			productReference = EED7730BE5D088D2D34E614512764DDF /* OnePasswordExtensionResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E366E93B9D54B1CF40B26EC2B3C8407A /* 1PasswordExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A59A7F43A3DDA09934FA7C38A121B5B /* Build configuration list for PBXNativeTarget "1PasswordExtension" */;
+			buildPhases = (
+				A75566F805D88785DBF07FD38C95A098 /* Sources */,
+				46259089E40A08936211A8F66EA0B175 /* Frameworks */,
+				0964C6FCE39C7E88421BC8A89A20801A /* Resources */,
+				E9BD235C40AF7BA7F4BD7E96586BB6C5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0DF3C01950417E7558BEA5B923C433B5 /* PBXTargetDependency */,
+			);
+			name = 1PasswordExtension;
+			productName = 1PasswordExtension;
+			productReference = 8EB1025F5793FE7E2BC7166C2B5F8D50 /* OnePasswordExtension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 3BE5163B4B3C9F018AF3C5C86332389E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E366E93B9D54B1CF40B26EC2B3C8407A /* 1PasswordExtension */,
+				D6122103C9D36D99793C6B3DF6EAB959 /* 1PasswordExtension-OnePasswordExtensionResources */,
+				C3A04698AAE4D6124C20602D622956E5 /* Cartography */,
+				223C952D3CD291DE22488C1F159F503B /* EasyPeasy */,
+				44D04613A7591446E9F604C26C55657F /* FoldingCell */,
+				27C2B7F0F221166025E1DC18D952D4FF /* LFLoginController */,
+				8A73F2A02A5A7EA1A6F84AACDDBC9A3E /* Pods-MeetYourFace */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0964C6FCE39C7E88421BC8A89A20801A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				340AABE2C23B29EFE857F6172820401C /* OnePasswordExtensionResources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7009D0ADE9A0FB5ED4D0EBDCC7FA8D7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65894E5CCB4249567D09DC1CE20DC5C8 /* 1Password.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B95F507847F616D1B512063F0E5171D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CC54355371489FC57AF30DDF493BA02 /* password.png in Resources */,
+				2C83B0324CFC6B8817A62C4E4FFCF18F /* user.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99A53D1B239C11E7C2EDB5FEFAE1BF55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E5D54BE3F60FBCAC4D38F8BFD482590 /* FoldingCell-dummy.m in Sources */,
+				7E107AAD9DEE8666CE3ED7E3B412BD0C /* FoldingCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A75566F805D88785DBF07FD38C95A098 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7476086003E76D303542DB66F67B9963 /* 1PasswordExtension-dummy.m in Sources */,
+				DD80DA28BB127E7D45654AE18F0C67A6 /* OnePasswordExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B962ED42E882856B9D168260BB18AE95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				584B68A7069844742AEF67ED9311FF50 /* Align.swift in Sources */,
+				D56BD3B0ACF32790F3EF43EA3DB08016 /* Cartography-dummy.m in Sources */,
+				EE94E3F06DA2F096BA43F0679567DC4B /* Coefficients.swift in Sources */,
+				28515F6FFAA0E2F9591A862D532F33AC /* Compound.swift in Sources */,
+				D2C9087C6581055C25D5559F934AF65B /* Constrain.swift in Sources */,
+				F469BC9885602957FCB73DD39B5B92B0 /* Constraint.swift in Sources */,
+				E1451AA498D7B41C4E049F5D9027B4A7 /* ConstraintGroup.swift in Sources */,
+				452C09D0CAC1F8286ABA1CE076033B23 /* Context.swift in Sources */,
+				0729DED1737DCDB309394E0B59393F37 /* Dimension.swift in Sources */,
+				369CA2AACEED2517C99D77D7700DFCEA /* Distribute.swift in Sources */,
+				2057FF930EF0F28E7AD548BF23BE78EE /* Edge.swift in Sources */,
+				5044CA9F7CCBB02F3C294106022FCF9F /* Edges.swift in Sources */,
+				7CD04D81B5ED213A105DFC517187EB87 /* Expression.swift in Sources */,
+				BE2FC20F5EDBAE658F688978AB12C279 /* Extensions.swift in Sources */,
+				8378B61D28075525380201114F6E4582 /* LayoutProxy.swift in Sources */,
+				D3C01862D88692FA2E85A2D84345982B /* Point.swift in Sources */,
+				C3649839064E53A4BF767D2EF29651EF /* Priority.swift in Sources */,
+				EB9E85B0CE6A53DCBDE040A716B5DBF8 /* Property.swift in Sources */,
+				B23E3B878363F72D1E874E46EB62FA7F /* Size.swift in Sources */,
+				F95ADCA0B85C6C0640372D3EFBBF1AD6 /* View.swift in Sources */,
+				48ADE3FB3F30FCA5893083351449DA98 /* ViewUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D456875D980FE3F6706B78E27B56ECA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAEB94E9D8D0C8A2C4804D73C466C6A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0F8BB79EDB6D15B7130B4058C885786 /* Attribute.swift in Sources */,
+				355F3E122A4FD19182581929248BE5AF /* CompoundAttribute.swift in Sources */,
+				CF3FB9E98F3A8BBFD91647CAFE219700 /* Constant.swift in Sources */,
+				131B086640309E45D7AB282DE92AAF9B /* Context.swift in Sources */,
+				DBB4B0D40A81B6F0CB231A7411E87718 /* DimensionAttribute+AppKit.swift in Sources */,
+				8CE3E62C0768F0D2BABF7D144D5325D8 /* DimensionAttribute+UIKit.swift in Sources */,
+				8B05C8DF1210D319DFFC2239F41526C2 /* DimensionAttribute.swift in Sources */,
+				589A8E124DEEC2A14EE0868FB5678C56 /* EasyPeasy-dummy.m in Sources */,
+				447AC19C3E732156FCBFFF5B814A65CF /* Item+AppKit.swift in Sources */,
+				C807C90D9AC80E4A2F94C66604F51722 /* Item+UIKit.swift in Sources */,
+				F67115B61E09A788B23094FA6FA41F94 /* Item.swift in Sources */,
+				06C16EA14052FE9D9D2D8A1DFED4704F /* Node.swift in Sources */,
+				C40CA9CC2AFAFEFAF0BA6613E54DA204 /* NSLayoutGuide+Easy.swift in Sources */,
+				CE5A84B82017ABDA35A58DE5445C0517 /* NSView+Easy.swift in Sources */,
+				2CB9A2570A1F3E110E68C9DB5BA88C8F /* PositionAttribute+AppKit.swift in Sources */,
+				C881223C845EDF270A21FE3427B681AC /* PositionAttribute+UIKit.swift in Sources */,
+				A14873121045854241BF73DF57C5DE44 /* PositionAttribute.swift in Sources */,
+				5C6D639A9B01FD35544BA88455275AF0 /* Priority.swift in Sources */,
+				3BCFF771A59A78D72033380FDBFBBBD4 /* ReferenceAttribute.swift in Sources */,
+				5E6B7BB0F897F7DCFA1B889DC7632462 /* UILayoutGuide+Easy.swift in Sources */,
+				F46BFEFC338EE6F9EC0BB44BB4CF795E /* UIView+Easy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1534A83DC77AAC2EE7605F349A746D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EECD4785C2348DA627E68B530A74A34B /* Pods-MeetYourFace-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF337A2025523F9EA83AB2356DDF3890 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A1D0BAED9385027D8C22621CA6B5850 /* AutoCompleteTextField.swift in Sources */,
+				DC22D3484CDF6B8C8D6D1191AD15BB48 /* LFLoginController-dummy.m in Sources */,
+				0308C7F68116670BA1769F5C97AD6C53 /* LFLoginController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0DF3C01950417E7558BEA5B923C433B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "1PasswordExtension-OnePasswordExtensionResources";
+			target = D6122103C9D36D99793C6B3DF6EAB959 /* 1PasswordExtension-OnePasswordExtensionResources */;
+			targetProxy = 88E74769879C9CF03B6448CE6C3739F8 /* PBXContainerItemProxy */;
+		};
+		4E225D38B290838D598707AE05FE13A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cartography;
+			target = C3A04698AAE4D6124C20602D622956E5 /* Cartography */;
+			targetProxy = 5C50F6116A9FF86A9609FE36447EF104 /* PBXContainerItemProxy */;
+		};
+		4F94B4D18E5D10541570CD441CA21EC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyPeasy;
+			target = 223C952D3CD291DE22488C1F159F503B /* EasyPeasy */;
+			targetProxy = CCA19B27638C8D0BB6757BACB52ABB4C /* PBXContainerItemProxy */;
+		};
+		7D83B038829C40E42E63D338931E2213 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LFLoginController;
+			target = 27C2B7F0F221166025E1DC18D952D4FF /* LFLoginController */;
+			targetProxy = ACA703DBDF533F92D121462A76DBB63B /* PBXContainerItemProxy */;
+		};
+		886AEBC998161AFF13BA02E170C0F111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = 1PasswordExtension;
+			target = E366E93B9D54B1CF40B26EC2B3C8407A /* 1PasswordExtension */;
+			targetProxy = D134ED2991BDA50424B9519385374FE5 /* PBXContainerItemProxy */;
+		};
+		BC5316265B9133C7C3A737473914AA21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FoldingCell;
+			target = 44D04613A7591446E9F604C26C55657F /* FoldingCell */;
+			targetProxy = EEA747613823DF73D6448059684B8E0B /* PBXContainerItemProxy */;
+		};
+		D10DF7F6D9E863E76AC958B9CF820637 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = 1PasswordExtension;
+			target = E366E93B9D54B1CF40B26EC2B3C8407A /* 1PasswordExtension */;
+			targetProxy = B9AE1B93447936B99A1F355980D09724 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C1689FF711B97C5DD53A9E3A736749E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 066210870273C48288A6CEEEB24E4CFC /* FoldingCell.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FoldingCell/FoldingCell-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FoldingCell/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FoldingCell/FoldingCell.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FoldingCell;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		115110A3EE45A7F8AE016D60543152D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4599F7B0662B9F807B4C615F81DAE9EE /* LFLoginController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LFLoginController/LFLoginController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LFLoginController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LFLoginController/LFLoginController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LFLoginController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1A79383A54B487E28E4C302C30B4220A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75151615FDEF3C3C5AB6387A08887516 /* Cartography.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Cartography/Cartography-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cartography/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Cartography/Cartography.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Cartography;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		21D90BC4BBD4ED63A777A243D218E130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BD37DD01318CEF83ADEE5044394C1FF /* 1PasswordExtension.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/1PasswordExtension/1PasswordExtension-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/1PasswordExtension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/1PasswordExtension/1PasswordExtension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = OnePasswordExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		36B6664CD19E90CF0105A16BAFC2353C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 066210870273C48288A6CEEEB24E4CFC /* FoldingCell.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FoldingCell/FoldingCell-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FoldingCell/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FoldingCell/FoldingCell.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FoldingCell;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4EAE7F24E3987EE0203FBD1C1652FD02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BD37DD01318CEF83ADEE5044394C1FF /* 1PasswordExtension.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/1PasswordExtension";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/1PasswordExtension/ResourceBundle-OnePasswordExtensionResources-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = OnePasswordExtensionResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7A3953E517FE1203BB3200C1B23D514D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4599F7B0662B9F807B4C615F81DAE9EE /* LFLoginController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LFLoginController/LFLoginController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LFLoginController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LFLoginController/LFLoginController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LFLoginController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		82B5622F9D5DC575F4B3BD8882F1396C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CBBBC969A28BF6DA38FC20B94D8790C /* Pods-MeetYourFace.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MeetYourFace/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MeetYourFace/Pods-MeetYourFace.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MeetYourFace;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		84E9D4A25C582773A075E63898B76658 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B969AD10DF3DD2F631CEDBC255EAD80F /* Pods-MeetYourFace.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MeetYourFace/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MeetYourFace/Pods-MeetYourFace.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MeetYourFace;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8AED726F6126D064D8F3144BF797C65D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C5CE1C1193149D5C7B9D6C525EC0038 /* EasyPeasy.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyPeasy/EasyPeasy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyPeasy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyPeasy/EasyPeasy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = EasyPeasy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9B2317DE14133A972D03AE2830D6B821 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BD37DD01318CEF83ADEE5044394C1FF /* 1PasswordExtension.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/1PasswordExtension/1PasswordExtension-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/1PasswordExtension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/1PasswordExtension/1PasswordExtension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = OnePasswordExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A4474F4BF89516A6E746D29B9E73DC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75151615FDEF3C3C5AB6387A08887516 /* Cartography.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Cartography/Cartography-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cartography/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Cartography/Cartography.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Cartography;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C8712A62F22218E12EED1F5680DDE96F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C5CE1C1193149D5C7B9D6C525EC0038 /* EasyPeasy.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyPeasy/EasyPeasy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyPeasy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyPeasy/EasyPeasy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = EasyPeasy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CAAC30EB0412148B8EB51678F78496E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BD37DD01318CEF83ADEE5044394C1FF /* 1PasswordExtension.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/1PasswordExtension";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/1PasswordExtension/ResourceBundle-OnePasswordExtensionResources-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = OnePasswordExtensionResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A59A7F43A3DDA09934FA7C38A121B5B /* Build configuration list for PBXNativeTarget "1PasswordExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21D90BC4BBD4ED63A777A243D218E130 /* Debug */,
+				9B2317DE14133A972D03AE2830D6B821 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
+				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4430D4A98D8B596A97B46F8C9A0FA3CB /* Build configuration list for PBXNativeTarget "Pods-MeetYourFace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E9D4A25C582773A075E63898B76658 /* Debug */,
+				82B5622F9D5DC575F4B3BD8882F1396C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70099CD97642C85A604FF6FCE4E7E8B0 /* Build configuration list for PBXNativeTarget "FoldingCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C1689FF711B97C5DD53A9E3A736749E /* Debug */,
+				36B6664CD19E90CF0105A16BAFC2353C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75AFA9AAD12F5E4BF0667D9ECDDD34F0 /* Build configuration list for PBXNativeTarget "LFLoginController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A3953E517FE1203BB3200C1B23D514D /* Debug */,
+				115110A3EE45A7F8AE016D60543152D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7D2C79CF66FE8574AAD47094F69E620 /* Build configuration list for PBXNativeTarget "1PasswordExtension-OnePasswordExtensionResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EAE7F24E3987EE0203FBD1C1652FD02 /* Debug */,
+				CAAC30EB0412148B8EB51678F78496E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B22DC939D187391042315573DBEE7623 /* Build configuration list for PBXNativeTarget "Cartography" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4474F4BF89516A6E746D29B9E73DC03 /* Debug */,
+				1A79383A54B487E28E4C302C30B4220A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E139BA01DA61BDA37DB2989E5338681B /* Build configuration list for PBXNativeTarget "EasyPeasy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8712A62F22218E12EED1F5680DDE96F /* Debug */,
+				8AED726F6126D064D8F3144BF797C65D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
