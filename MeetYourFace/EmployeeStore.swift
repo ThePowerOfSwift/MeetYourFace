@@ -26,6 +26,7 @@ class EmployeeStore {
             //Do something you want
             employees.append(Employee(
                 id: key,
+                image: subJson["image"].stringValue,
                 name: subJson["name"].stringValue,
                 email: subJson["email"].stringValue,
                 schedule: subJson["schedule"].arrayValue.map { $0.string!}
