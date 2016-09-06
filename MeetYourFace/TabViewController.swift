@@ -18,11 +18,11 @@ class TabViewController: UITabBarController, UITabBarControllerDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loginController.delegate = self
-        loginController.logo = UIImage(named: "Autodesklogo")
-        loginController.videoURL = NSBundle.mainBundle().URLForResource("AutodeskShow", withExtension: "mp4")!
-
-        self.navigationController?.pushViewController(loginController, animated: true)
+//        loginController.delegate = self
+//        loginController.logo = UIImage(named: "Autodesklogo")
+//        loginController.videoURL = NSBundle.mainBundle().URLForResource("AutodeskShow", withExtension: "mp4")!
+//
+//        self.navigationController?.pushViewController(loginController, animated: true)
         setup()
         //Do any additional setup after loading the view.
     }
@@ -41,7 +41,7 @@ class TabViewController: UITabBarController, UITabBarControllerDelegate{
             selectedImage: UIImage(named: "Meeting Filled-50.png"))
         homeViewController.tabBarItem = homeIcon
         
-        let cameraViewController = CameraViewController()
+        let cameraViewController = InstantScanViewController()
         let cameraIcon = UITabBarItem(
             title: "Scan",
             image: UIImage(named: "Compact Camera-50.png"),
