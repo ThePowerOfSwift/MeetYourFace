@@ -55,8 +55,12 @@ class InstantScanViewController: UIViewController {
         
         button.center = CGPoint(x: view.center.x,
                                 y: view.center.y * 4 / 3)
-        button.backgroundColor = UIColor.blackColor()
-        
+        button.backgroundColor = UIColor(
+            red: CGFloat(0x4c / 255.0),
+            green: CGFloat(0xd9 / 255.0),
+            blue: CGFloat(0x64 / 255.0),
+            alpha: CGFloat(1.0)
+        )
         button.addTarget(
             self,
             action: #selector(InstantScanViewController.meetingConfirmed(_:)),
@@ -69,8 +73,9 @@ class InstantScanViewController: UIViewController {
         
         // Create the actions
         let okAction = UIAlertAction(title: "OK",
-                                     style: UIAlertActionStyle.Default,
-                                     handler: nil)
+                                     style: UIAlertActionStyle.Default) {
+                                        UIAlertAction in self.isFirstLoad = true
+        }
         
         // Add the actions
         alertController.addAction(okAction)
