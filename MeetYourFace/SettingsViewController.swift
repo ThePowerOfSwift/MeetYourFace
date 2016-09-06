@@ -29,7 +29,7 @@ class SettingsViewController: UIViewController {
         testLabel.center = CGPointMake(160, 284)
         testLabel.textAlignment = NSTextAlignment.Center
         
-        if let path : String = NSBundle.mainBundle().pathForResource("testdata", ofType: "json") {
+        if let path : String = NSBundle.mainBundle().pathForResource("meeting", ofType: "json") {
             if let data = NSData(contentsOfFile: path) {
                 let json = JSON(data: data)
                 

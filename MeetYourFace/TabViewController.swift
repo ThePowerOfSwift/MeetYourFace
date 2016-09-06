@@ -13,6 +13,9 @@ import LFLoginController
 class TabViewController: UITabBarController, UITabBarControllerDelegate{
     let loginController = LFLoginController()
     
+    let employeeStore = EmployeeStore()
+    let meetingStore = MeetingStore()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loginController.delegate = self

@@ -1,0 +1,103 @@
+{
+  "1": {
+    "name": "Siyuan Liu",
+    "email": "siyuan.liu@autodesk.com",
+    "schedule": ["1"]
+  },
+  "2": {
+    "name": "Zhaoyang Ma",
+    "email": "zhaoyang.ma@autodesk.com",
+    "schedule": ["1"]
+  },
+  "3": {
+    "name": "Peter Tang",
+    "email": "peter.tang@autodesk.com",
+    "schedule": ["1", "3", "9"]
+  },
+  "4": {
+    "name": "Lekai Xie",
+    "email": "lekai.xie@autodesk.com",
+    "schedule": ["1"]
+  },
+  "5": {
+    "name": "Zhimon Chan",
+    "email": "zhimon.chan@autodesk.com",
+    "schedule": ["1"]
+  },
+  "6": {
+    "name": "Minqi Zhang",
+    "email": "minqi.zhang@autodesk.com",
+    "schedule": []
+  },
+  "7": {
+    "name": "Mason Myers",
+    "email": "mason.myers@autodesk.com",
+    "schedule": ["2", "3"]
+  },
+  "8": {
+    "name": "Simon Jones",
+    "email": "simon.jones@autodesk.com",
+    "schedule": ["2", "3"]
+  },
+  "9": {
+    "name": "Anand Joshi",
+    "email": "anand.joshi@autodesk.com",
+    "schedule": ["2", "3"]
+  },
+  "10": {
+    "name": "Ada Yan",
+    "email": "ada.yan@autodesk.com",
+    "schedule": ["5"]
+  },
+  "11": {
+    "name": "Andrey Bobrov",
+    "email": "andrey.bobrov@autodesk.com",
+    "schedule": ["5"]
+  },
+  "12": {
+    "name": "Trevor Wekel",
+    "email": "trevor.wekel@autodesk.com",
+    "schedule": ["5"]
+  },
+  "13": {
+    "name": "Kaycee Ng",
+    "email": "kaycee.ng@autodesk.com",
+    "schedule": ["5"]
+  },
+  "14": {
+    "name": "Emile Kfouri",
+    "email": "emile.kfouri@autodesk.com",
+    "schedule": ["5"]
+  },
+  "15": {
+    "name": "Evan Casey",
+    "email": "evan.casey@autodesk.com",
+    "schedule": ["5"]
+  },
+  "16": {
+    "name": "Mike Tessier",
+    "email": "mike.tessier@autodesk.com",
+    "schedule": ["7"]
+  },
+  "17": {
+    "name": "Mark Chan",
+    "email": "mark.chan@autodesk.com",
+    "schedule": ["7"]
+  },
+  "18": {
+    "name": "Elizabeth Katzki",
+    "email": "elizabeth.katzki@autodesk.com",
+    "schedule": ["7"]
+  },
+  "19": {
+    "name": "Justin Hoey",
+    "email": "justin.hoey@autodesk.com",
+    "schedule": ["7"]
+  },
+  "20": {
+    "name": "Richard Howard",
+    "email": "richard.howard@autodesk.com",
+    "schedule": ["7", "9"]
+  }
+
+}

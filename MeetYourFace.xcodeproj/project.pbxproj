@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		252B2DAC1D7E76FD00B559E0 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 252B2DAB1D7E76FD00B559E0 /* data.json */; };
 		43020FC11D7285C5007CC830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43020FC01D7285C5007CC830 /* AppDelegate.swift */; };
 		43020FC31D7285C5007CC830 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43020FC21D7285C5007CC830 /* LoginViewController.swift */; };
 		43020FC61D7285C5007CC830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43020FC41D7285C5007CC830 /* Main.storyboard */; };
@@ -17,12 +16,17 @@
 		43020FD51D729C31007CC830 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43020FD41D729C31007CC830 /* CameraViewController.swift */; };
 		43020FD71D729C42007CC830 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43020FD61D729C42007CC830 /* HomeViewController.swift */; };
 		433BA4091D747C7900CB54E3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BA4081D747C7900CB54E3 /* SettingsViewController.swift */; };
+		43D53D431D7E8E7300062093 /* employee.json in Resources */ = {isa = PBXBuildFile; fileRef = 43D53D421D7E8E7300062093 /* employee.json */; };
+		43D53D451D7E8E9600062093 /* meeting.json in Resources */ = {isa = PBXBuildFile; fileRef = 43D53D441D7E8E9600062093 /* meeting.json */; };
+		43D53D471D7E8EC400062093 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D53D461D7E8EC400062093 /* Employee.swift */; };
+		43D53D491D7E8F9E00062093 /* Meeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D53D481D7E8F9E00062093 /* Meeting.swift */; };
+		43D53D4B1D7E907F00062093 /* EmployeeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D53D4A1D7E907F00062093 /* EmployeeStore.swift */; };
+		43D53D4D1D7E920900062093 /* MeetingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D53D4C1D7E920900062093 /* MeetingStore.swift */; };
 		9DA1DFA8B2178AF1EDF52FB2 /* Pods_MeetYourFace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA02632EAEE0C6AEC8C75D5 /* Pods_MeetYourFace.framework */; };
 		C38C5D9D1D7DC0B100489CDB /* AutodeskShow.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C38C5D9C1D7DC0B100489CDB /* AutodeskShow.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		252B2DAB1D7E76FD00B559E0 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		3B97A465DAD4B04A424A09E4 /* Pods-MeetYourFace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetYourFace.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeetYourFace/Pods-MeetYourFace.release.xcconfig"; sourceTree = "<group>"; };
 		43020FBD1D7285C5007CC830 /* MeetYourFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetYourFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43020FC01D7285C5007CC830 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +39,12 @@
 		43020FD41D729C31007CC830 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		43020FD61D729C42007CC830 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		433BA4081D747C7900CB54E3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		43D53D421D7E8E7300062093 /* employee.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = employee.json; sourceTree = "<group>"; };
+		43D53D441D7E8E9600062093 /* meeting.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = meeting.json; sourceTree = "<group>"; };
+		43D53D461D7E8EC400062093 /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		43D53D481D7E8F9E00062093 /* Meeting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meeting.swift; sourceTree = "<group>"; };
+		43D53D4A1D7E907F00062093 /* EmployeeStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeStore.swift; sourceTree = "<group>"; };
+		43D53D4C1D7E920900062093 /* MeetingStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingStore.swift; sourceTree = "<group>"; };
 		76EFE06D6F6E980BC9F700D5 /* Pods-MeetYourFace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetYourFace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeetYourFace/Pods-MeetYourFace.debug.xcconfig"; sourceTree = "<group>"; };
 		ABA02632EAEE0C6AEC8C75D5 /* Pods_MeetYourFace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeetYourFace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38C5D9C1D7DC0B100489CDB /* AutodeskShow.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AutodeskShow.mp4; sourceTree = "<group>"; };
@@ -73,7 +83,8 @@
 		43020FBF1D7285C5007CC830 /* MeetYourFace */ = {
 			isa = PBXGroup;
 			children = (
-				252B2DAB1D7E76FD00B559E0 /* data.json */,
+				43D53D441D7E8E9600062093 /* meeting.json */,
+				43D53D421D7E8E7300062093 /* employee.json */,
 				C38C5D9C1D7DC0B100489CDB /* AutodeskShow.mp4 */,
 				43020FC71D7285C5007CC830 /* Assets.xcassets */,
 				43020FC41D7285C5007CC830 /* Main.storyboard */,
@@ -85,6 +96,10 @@
 				43020FD41D729C31007CC830 /* CameraViewController.swift */,
 				43020FD61D729C42007CC830 /* HomeViewController.swift */,
 				433BA4081D747C7900CB54E3 /* SettingsViewController.swift */,
+				43D53D461D7E8EC400062093 /* Employee.swift */,
+				43D53D481D7E8F9E00062093 /* Meeting.swift */,
+				43D53D4A1D7E907F00062093 /* EmployeeStore.swift */,
+				43D53D4C1D7E920900062093 /* MeetingStore.swift */,
 			);
 			path = MeetYourFace;
 			sourceTree = "<group>";
@@ -119,6 +134,7 @@
 				43020FBB1D7285C5007CC830 /* Resources */,
 				29070CAADA5C57518B3F4EE7 /* [CP] Embed Pods Frameworks */,
 				3ABD6ECE39D610401C0D8531 /* [CP] Copy Pods Resources */,
+				0340793572B495389E820455 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,16 +185,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				C38C5D9D1D7DC0B100489CDB /* AutodeskShow.mp4 in Resources */,
+				43D53D451D7E8E9600062093 /* meeting.json in Resources */,
 				43020FCB1D7285C5007CC830 /* LaunchScreen.storyboard in Resources */,
 				43020FC81D7285C5007CC830 /* Assets.xcassets in Resources */,
-				252B2DAC1D7E76FD00B559E0 /* data.json in Resources */,
 				43020FC61D7285C5007CC830 /* Main.storyboard in Resources */,
+				43D53D431D7E8E7300062093 /* employee.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0340793572B495389E820455 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeetYourFace/Pods-MeetYourFace-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		29070CAADA5C57518B3F4EE7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,8 +264,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				43020FD71D729C42007CC830 /* HomeViewController.swift in Sources */,
+				43D53D491D7E8F9E00062093 /* Meeting.swift in Sources */,
 				43020FD31D7290B0007CC830 /* TabViewController.swift in Sources */,
 				43020FD51D729C31007CC830 /* CameraViewController.swift in Sources */,
+				43D53D4B1D7E907F00062093 /* EmployeeStore.swift in Sources */,
+				43D53D4D1D7E920900062093 /* MeetingStore.swift in Sources */,
+				43D53D471D7E8EC400062093 /* Employee.swift in Sources */,
 				43020FC31D7285C5007CC830 /* LoginViewController.swift in Sources */,
 				43020FC11D7285C5007CC830 /* AppDelegate.swift in Sources */,
 				433BA4091D747C7900CB54E3 /* SettingsViewController.swift in Sources */,
