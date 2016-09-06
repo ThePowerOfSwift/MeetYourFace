@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		43020FC11D7285C5007CC830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43020FC01D7285C5007CC830 /* AppDelegate.swift */; };
-		43020FC31D7285C5007CC830 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43020FC21D7285C5007CC830 /* LoginViewController.swift */; };
 		43020FC61D7285C5007CC830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43020FC41D7285C5007CC830 /* Main.storyboard */; };
 		43020FC81D7285C5007CC830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43020FC71D7285C5007CC830 /* Assets.xcassets */; };
 		43020FCB1D7285C5007CC830 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43020FC91D7285C5007CC830 /* LaunchScreen.storyboard */; };
@@ -23,6 +22,7 @@
 		43D53D4B1D7E907F00062093 /* EmployeeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D53D4A1D7E907F00062093 /* EmployeeStore.swift */; };
 		43D53D4D1D7E920900062093 /* MeetingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D53D4C1D7E920900062093 /* MeetingStore.swift */; };
 		43D53D511D7EA0CD00062093 /* InstantScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D53D501D7EA0CD00062093 /* InstantScanViewController.swift */; };
+		43D53D571D7EA74200062093 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D53D561D7EA74200062093 /* ScanViewController.swift */; };
 		9DA1DFA8B2178AF1EDF52FB2 /* Pods_MeetYourFace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA02632EAEE0C6AEC8C75D5 /* Pods_MeetYourFace.framework */; };
 		C38C5D9D1D7DC0B100489CDB /* AutodeskShow.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C38C5D9C1D7DC0B100489CDB /* AutodeskShow.mp4 */; };
 /* End PBXBuildFile section */
@@ -31,7 +31,6 @@
 		3B97A465DAD4B04A424A09E4 /* Pods-MeetYourFace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetYourFace.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeetYourFace/Pods-MeetYourFace.release.xcconfig"; sourceTree = "<group>"; };
 		43020FBD1D7285C5007CC830 /* MeetYourFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetYourFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43020FC01D7285C5007CC830 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		43020FC21D7285C5007CC830 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		43020FC51D7285C5007CC830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43020FC71D7285C5007CC830 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43020FCA1D7285C5007CC830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		43D53D4A1D7E907F00062093 /* EmployeeStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeStore.swift; sourceTree = "<group>"; };
 		43D53D4C1D7E920900062093 /* MeetingStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingStore.swift; sourceTree = "<group>"; };
 		43D53D501D7EA0CD00062093 /* InstantScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstantScanViewController.swift; sourceTree = "<group>"; };
+		43D53D561D7EA74200062093 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		76EFE06D6F6E980BC9F700D5 /* Pods-MeetYourFace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetYourFace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeetYourFace/Pods-MeetYourFace.debug.xcconfig"; sourceTree = "<group>"; };
 		ABA02632EAEE0C6AEC8C75D5 /* Pods_MeetYourFace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeetYourFace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38C5D9C1D7DC0B100489CDB /* AutodeskShow.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AutodeskShow.mp4; sourceTree = "<group>"; };
@@ -85,6 +85,7 @@
 		43020FBF1D7285C5007CC830 /* MeetYourFace */ = {
 			isa = PBXGroup;
 			children = (
+				43D53D581D7EB1D600062093 /* InstantMeeting */,
 				43D53D551D7EA14900062093 /* asset */,
 				43D53D541D7EA13C00062093 /* data */,
 				43D53D531D7EA12200062093 /* store */,
@@ -94,12 +95,10 @@
 				43020FC91D7285C5007CC830 /* LaunchScreen.storyboard */,
 				43020FCC1D7285C5007CC830 /* Info.plist */,
 				43020FC01D7285C5007CC830 /* AppDelegate.swift */,
-				43020FC21D7285C5007CC830 /* LoginViewController.swift */,
 				43020FD21D7290B0007CC830 /* TabViewController.swift */,
 				43020FD41D729C31007CC830 /* CameraViewController.swift */,
 				43020FD61D729C42007CC830 /* HomeViewController.swift */,
 				433BA4081D747C7900CB54E3 /* SettingsViewController.swift */,
-				43D53D501D7EA0CD00062093 /* InstantScanViewController.swift */,
 			);
 			path = MeetYourFace;
 			sourceTree = "<group>";
@@ -137,6 +136,15 @@
 				C38C5D9C1D7DC0B100489CDB /* AutodeskShow.mp4 */,
 			);
 			name = asset;
+			sourceTree = "<group>";
+		};
+		43D53D581D7EB1D600062093 /* InstantMeeting */ = {
+			isa = PBXGroup;
+			children = (
+				43D53D501D7EA0CD00062093 /* InstantScanViewController.swift */,
+				43D53D561D7EA74200062093 /* ScanViewController.swift */,
+			);
+			name = InstantMeeting;
 			sourceTree = "<group>";
 		};
 		73283ED307F231C4768327A3 /* Pods */ = {
@@ -306,9 +314,9 @@
 				43D53D4B1D7E907F00062093 /* EmployeeStore.swift in Sources */,
 				43D53D4D1D7E920900062093 /* MeetingStore.swift in Sources */,
 				43D53D471D7E8EC400062093 /* Employee.swift in Sources */,
-				43020FC31D7285C5007CC830 /* LoginViewController.swift in Sources */,
 				43020FC11D7285C5007CC830 /* AppDelegate.swift in Sources */,
 				433BA4091D747C7900CB54E3 /* SettingsViewController.swift in Sources */,
+				43D53D571D7EA74200062093 /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
