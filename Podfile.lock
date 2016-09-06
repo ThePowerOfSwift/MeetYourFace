@@ -1,8 +1,12 @@
 PODS:
+  - 1PasswordExtension (1.8.2)
   - Cartography (0.5.0)
+  - LFLoginController (0.2.3):
+    - 1PasswordExtension (= 1.8.2)
 
 DEPENDENCIES:
   - Cartography (from `https://github.com/robb/Cartography.git`, tag `0.6.0`)
+  - LFLoginController
 
 EXTERNAL SOURCES:
   Cartography:
@@ -15,6 +19,8 @@ CHECKOUT OPTIONS:
     :tag: 0.6.0
 
 SPEC CHECKSUMS:
+  1PasswordExtension: 303f2b7bbf6dc19ede3090bd6b5987530648d687
   Cartography: 314f5ed1495995760487161eeb7a8a0940d88ad3
+  LFLoginController: d925f6c8dd83b21c61f2b5816d3a0ea6dfe3a711
 
 COCOAPODS: 0.39.0

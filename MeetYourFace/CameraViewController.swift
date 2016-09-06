@@ -34,6 +34,9 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         context:nil,
         options:[ CIDetectorAccuracy: CIDetectorAccuracyLow ])
     
+    private var foundFace = false
+    private var dispatchingFoundFace = false
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -176,6 +179,9 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
             if layer.name == "FaceLayer" {
                 layer.hidden = true
             }
+            if layer.name == "TextLayer" {
+                layer.hidden = true
+            }
         }
         if featuresCount == 0 {
             print("no face")
@@ -201,6 +207,14 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
                 
                 print("Found face!!!")
                 
+                if(!foundFace && !dispatchingFoundFace) {
+                    dispatchingFoundFace = true
+                    let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(5 * Double(NSEC_PER_SEC)))
+                    dispatch_after(delayTime, dispatch_get_main_queue()) {
+                        self.foundFace = true
+                    }
+                }
+                
                 // flip preview width and height
                 var temp = faceRect.size.width
                 faceRect.size.width = faceRect.size.height
@@ -224,6 +238,7 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
                 //}
                 
                 var featureLayer: CALayer?
+                var textLayer: CATextLayer?
                 
                 // re-use an existing layer if possible
                 while currentSublayer < sublayersCount {
@@ -232,7 +247,12 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
                     if currentLayer.name == "FaceLayer" {
                         featureLayer = currentLayer
                         currentLayer.hidden = false
-                        break
+                    }
+                    if currentLayer.name == "TextLayer" {
+                        if let layer = currentLayer as? CATextLayer {
+                            textLayer = layer
+                            currentLayer.hidden = false
+                        }
                     }
                 }
                 
@@ -246,6 +266,28 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
                 }
                 featureLayer?.frame = faceRect
                 featureLayer?.setAffineTransform(
+                    CGAffineTransformMakeRotation(0))
+                
+                
+                if (foundFace && textLayer == nil) {
+                    textLayer = CATextLayer()
+                    textLayer!.string = "Zhimon"
+                    let fontName: CFStringRef = "System 17.0"
+                    textLayer!.font = CTFontCreateWithName(fontName, 30.0, nil)
+                    textLayer!.foregroundColor = UIColor.blueColor().CGColor
+                    textLayer!.wrapped = true
+                    textLayer!.alignmentMode = kCAAlignmentCenter
+                    
+                    textLayer!.contentsScale = UIScreen.mainScreen().scale
+                    textLayer!.name = "TextLayer"
+                    previewLayer.addSublayer(textLayer!)
+                }
+                textLayer?.frame = CGRect(
+                    x: faceRect.origin.x,
+                    y: faceRect.origin.y + faceRect.height,
+                    width: faceRect.width,
+                    height: 50);
+                textLayer?.setAffineTransform(
                     CGAffineTransformMakeRotation(0))
                
                 
