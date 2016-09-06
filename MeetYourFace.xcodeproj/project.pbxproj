@@ -12,7 +12,7 @@
 		43020FC81D7285C5007CC830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43020FC71D7285C5007CC830 /* Assets.xcassets */; };
 		43020FCB1D7285C5007CC830 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43020FC91D7285C5007CC830 /* LaunchScreen.storyboard */; };
 		43020FD31D7290B0007CC830 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43020FD21D7290B0007CC830 /* TabViewController.swift */; };
-		43020FD51D729C31007CC830 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43020FD41D729C31007CC830 /* CameraViewController.swift */; };
+		43020FD51D729C31007CC830 /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43020FD41D729C31007CC830 /* FaceViewController.swift */; };
 		43020FD71D729C42007CC830 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43020FD61D729C42007CC830 /* HomeViewController.swift */; };
 		433BA4091D747C7900CB54E3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BA4081D747C7900CB54E3 /* SettingsViewController.swift */; };
 		43D53D431D7E8E7300062093 /* employee.json in Resources */ = {isa = PBXBuildFile; fileRef = 43D53D421D7E8E7300062093 /* employee.json */; };
@@ -38,7 +38,7 @@
 		43020FCA1D7285C5007CC830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43020FCC1D7285C5007CC830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43020FD21D7290B0007CC830 /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
-		43020FD41D729C31007CC830 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		43020FD41D729C31007CC830 /* FaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
 		43020FD61D729C42007CC830 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		433BA4081D747C7900CB54E3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		43D53D421D7E8E7300062093 /* employee.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = employee.json; sourceTree = "<group>"; };
@@ -54,7 +54,6 @@
 		C38C5D9C1D7DC0B100489CDB /* AutodeskShow.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AutodeskShow.mp4; sourceTree = "<group>"; };
 		C38C5D9E1D7E66C800489CDB /* DemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCell.swift; sourceTree = "<group>"; };
 		C38C5DA81D7E6B3900489CDB /* ConfigurationBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationBlock.swift; sourceTree = "<group>"; };
-		DE03A59327EB65B4F4E39C0C /* Pods-MeetYourFace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetYourFace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeetYourFace/Pods-MeetYourFace.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +104,7 @@
 				43020FCC1D7285C5007CC830 /* Info.plist */,
 				43020FC01D7285C5007CC830 /* AppDelegate.swift */,
 				43020FD21D7290B0007CC830 /* TabViewController.swift */,
-				43020FD41D729C31007CC830 /* CameraViewController.swift */,
+				43020FD41D729C31007CC830 /* FaceViewController.swift */,
 				43020FD61D729C42007CC830 /* HomeViewController.swift */,
 				433BA4081D747C7900CB54E3 /* SettingsViewController.swift */,
 			);
@@ -134,8 +133,6 @@
 		43D53D541D7EA13C00062093 /* data */ = {
 			isa = PBXGroup;
 			children = (
-				43D53D441D7E8E9600062093 /* meeting.json */,
-				43D53D421D7E8E7300062093 /* employee.json */,
 			);
 			name = data;
 			sourceTree = "<group>";
@@ -143,7 +140,6 @@
 		43D53D551D7EA14900062093 /* asset */ = {
 			isa = PBXGroup;
 			children = (
-				C38C5D9C1D7DC0B100489CDB /* AutodeskShow.mp4 */,
 			);
 			name = asset;
 			sourceTree = "<group>";
@@ -319,7 +315,7 @@
 				43020FD71D729C42007CC830 /* HomeViewController.swift in Sources */,
 				43D53D491D7E8F9E00062093 /* Meeting.swift in Sources */,
 				43020FD31D7290B0007CC830 /* TabViewController.swift in Sources */,
-				43020FD51D729C31007CC830 /* CameraViewController.swift in Sources */,
+				43020FD51D729C31007CC830 /* FaceViewController.swift in Sources */,
 				43D53D511D7EA0CD00062093 /* InstantScanViewController.swift in Sources */,
 				C38C5D9F1D7E66C800489CDB /* DemoCell.swift in Sources */,
 				43D53D4B1D7E907F00062093 /* EmployeeStore.swift in Sources */,

@@ -22,7 +22,9 @@ enum ExifOrientation: NSNumber {
     case PHOTOS_EXIF_0ROW_LEFT_0COL_BOTTOM      = 8  //   8  =  0th row is on the left, and 0th column is the bottom.
 };
 
-class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
+class FaceViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
+    
+    var callback: ((Void) -> ())?
     
     private let videoDataOutput = AVCaptureVideoDataOutput()
     private let videoDataOutputQueue = dispatch_queue_create("VideoDataOutputQueue", DISPATCH_QUEUE_SERIAL)
@@ -160,6 +162,40 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         
     }
     
+    func showText(text: String, sublayers: [CALayer]) {
+        var hasLayer = false
+        for layer in sublayers {
+            if layer.name == "TextLayer" {
+                if let l = layer as? CATextLayer {
+                    l.string = text
+                    hasLayer = true
+                }
+            }
+        }
+        if hasLayer {
+            return
+        }
+        
+        let tl = CATextLayer()
+        tl.fontSize = 22.0
+        tl.string = text
+        tl.foregroundColor = UIColor.whiteColor().CGColor
+        tl.wrapped = true
+        tl.alignmentMode = kCAAlignmentCenter
+        
+        tl.contentsScale = UIScreen.mainScreen().scale
+        tl.name = "TextLayer"
+        previewLayer.addSublayer(tl)
+        tl.frame = CGRect(
+            x: view.bounds.origin.x,
+            y: view.bounds.origin.y + 50,
+            width: 300,
+            height: 50);
+        tl.setAffineTransform(
+            CGAffineTransformMakeRotation(0))
+        
+    }
+    
     func drawFaceFocus(
         features: [CIFeature],
         forVideoBox clearAperture : CGRect,
@@ -168,7 +204,6 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         let sublayersCount = sublayers!.count
         var currentSublayer = 0
         let featuresCount = features.count
-        var currentFeature = 0
 
         CATransaction.begin()
         CATransaction.setValue(kCFBooleanTrue,
@@ -179,12 +214,12 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
             if layer.name == "FaceLayer" {
                 layer.hidden = true
             }
-            if layer.name == "TextLayer" {
-                layer.hidden = true
-            }
         }
+        
         if featuresCount == 0 {
-            print("no face")
+            if foundFace {
+                showText("Mingqi Zhang", sublayers: sublayers!)
+            }
             CATransaction.commit()
             return
         }
@@ -209,6 +244,7 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
                 
                 if(!foundFace && !dispatchingFoundFace) {
                     dispatchingFoundFace = true
+                    showText("Checking", sublayers: sublayers!)
                     let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(5 * Double(NSEC_PER_SEC)))
                     dispatch_after(delayTime, dispatch_get_main_queue()) {
                         self.foundFace = true
@@ -238,7 +274,6 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
                 //}
                 
                 var featureLayer: CALayer?
-                var textLayer: CATextLayer?
                 
                 // re-use an existing layer if possible
                 while currentSublayer < sublayersCount {
@@ -247,12 +282,6 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
                     if currentLayer.name == "FaceLayer" {
                         featureLayer = currentLayer
                         currentLayer.hidden = false
-                    }
-                    if currentLayer.name == "TextLayer" {
-                        if let layer = currentLayer as? CATextLayer {
-                            textLayer = layer
-                            currentLayer.hidden = false
-                        }
                     }
                 }
                 
@@ -268,27 +297,17 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
                 featureLayer?.setAffineTransform(
                     CGAffineTransformMakeRotation(0))
                 
-                
-                if (foundFace && textLayer == nil) {
-                    textLayer = CATextLayer()
-                    textLayer!.fontSize = 22.0
-                    textLayer!.string = "Minqi Zhang"
-                    textLayer!.foregroundColor = UIColor.whiteColor().CGColor
-                    textLayer!.wrapped = true
-                    textLayer!.alignmentMode = kCAAlignmentCenter
-                    
-                    textLayer!.contentsScale = UIScreen.mainScreen().scale
-                    textLayer!.name = "TextLayer"
-                    previewLayer.addSublayer(textLayer!)
-                    textLayer!.frame = CGRect(
-                        x: view.bounds.origin.x,
-                        y: view.bounds.origin.y + 50,
-                        width: 300,
-                        height: 50);
-                    textLayer!.setAffineTransform(
-                        CGAffineTransformMakeRotation(0))
+                if foundFace {
+                    showText("Mingqi Zhang", sublayers: sublayers!)
+                    let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(3 * Double(NSEC_PER_SEC)))
+                    dispatch_after(delayTime, dispatch_get_main_queue()) {
+                        self.callback!()
+                        self.dismissViewControllerAnimated(false, completion: nil)
+                    }
+                } else {
+                    showText("Checking", sublayers: sublayers!)
                 }
-                currentFeature += 1
+                
             }
         }
         CATransaction.commit()

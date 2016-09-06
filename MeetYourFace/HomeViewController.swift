@@ -113,7 +113,14 @@ class HomeViewController: UITableViewController {
     //Mark : Actions
     
     @IBAction func InvitePeople(sender: UIButton) {
-       let tabViewController = self.navigationController?.viewControllers[0] as! TabViewController
-        tabViewController.selectedIndex = 1
+//       let tabViewController = self.navigationController?.viewControllers[0] as! TabViewController
+//        tabViewController.selectedIndex = 1
+        let vc = FaceViewController()
+        vc.callback = self.faceDetectionFinished
+        presentViewController(vc, animated: false, completion: nil)
+    }
+    
+    func faceDetectionFinished() {
+        print("faceDetectionFinished")
     }
 }
