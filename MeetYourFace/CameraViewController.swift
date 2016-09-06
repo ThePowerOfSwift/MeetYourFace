@@ -205,7 +205,7 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
                 // (Bottom right if mirroring is turned on)
                 var faceRect = ff.bounds
                 
-                print("Found face!!!")
+                //print("Found face!!!")
                 
                 if(!foundFace && !dispatchingFoundFace) {
                     dispatchingFoundFace = true
@@ -271,26 +271,23 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
                 
                 if (foundFace && textLayer == nil) {
                     textLayer = CATextLayer()
-                    textLayer!.string = "Zhimon"
-                    let fontName: CFStringRef = "System 17.0"
-                    textLayer!.font = CTFontCreateWithName(fontName, 30.0, nil)
-                    textLayer!.foregroundColor = UIColor.blueColor().CGColor
+                    textLayer!.fontSize = 22.0
+                    textLayer!.string = "Minqi Zhang"
+                    textLayer!.foregroundColor = UIColor.whiteColor().CGColor
                     textLayer!.wrapped = true
                     textLayer!.alignmentMode = kCAAlignmentCenter
                     
                     textLayer!.contentsScale = UIScreen.mainScreen().scale
                     textLayer!.name = "TextLayer"
                     previewLayer.addSublayer(textLayer!)
+                    textLayer!.frame = CGRect(
+                        x: view.bounds.origin.x,
+                        y: view.bounds.origin.y + 50,
+                        width: 300,
+                        height: 50);
+                    textLayer!.setAffineTransform(
+                        CGAffineTransformMakeRotation(0))
                 }
-                textLayer?.frame = CGRect(
-                    x: faceRect.origin.x,
-                    y: faceRect.origin.y + faceRect.height,
-                    width: faceRect.width,
-                    height: 50);
-                textLayer?.setAffineTransform(
-                    CGAffineTransformMakeRotation(0))
-               
-                
                 currentFeature += 1
             }
         }

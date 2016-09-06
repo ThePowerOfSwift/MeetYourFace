@@ -26,6 +26,8 @@ class ScanViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
     
     private var foundFace = false
     private var dispatchingFoundFace = false
+    private var updatingText = false
+    private var checkText = ""
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -168,9 +170,9 @@ class ScanViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
             if layer.name == "SquareLayer" {
                 layer.hidden = true
             }
-            if layer.name == "TextLayer" {
-                layer.hidden = true
-            }
+//            if layer.name == "TextLayer" {
+//                layer.hidden = true
+//            }
         }
         if featuresCount == 0 {
             //print("no square")
@@ -241,6 +243,7 @@ class ScanViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
                     if currentLayer.name == "TextLayer" {
                         if let layer = currentLayer as? CATextLayer {
                             textLayer = layer
+                            textLayer!.string = checkText
                             currentLayer.hidden = false
                         }
                     }
@@ -272,7 +275,14 @@ class ScanViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
                 if (textLayer == nil) {
                     textLayer = CATextLayer()
                     textLayer!.fontSize = 22.0
-                    textLayer!.string = "Checking Raffles Place..."
+                    if(checkText == "" && !updatingText) {
+                        updatingText = true
+                        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(1 * Double(NSEC_PER_SEC)))
+                        dispatch_after(delayTime, dispatch_get_main_queue()) {
+                            self.checkText = "Checking Raffles Place..."
+                        }
+                    }
+                    textLayer!.string = checkText
                     //textLayer!.backgroundColor = UIColor(white: 0.2, alpha: 0.3).CGColor
 //                    let fontName: CFStringRef = "System 17.0"
 //                    textLayer!.font = CTFontCreateWithName(fontName, 12.0, nil)
