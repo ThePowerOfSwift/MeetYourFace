@@ -13,8 +13,10 @@ import UIKit
 
 class HomeViewController: UITableViewController {
     
+    let employeeStore = EmployeeStore()
+    let meetingStore = MeetingStore()
     let kCloseCellHeight: CGFloat = 179
-    let kOpenCellHeight: CGFloat = 488
+    let kOpenCellHeight: CGFloat = 415
     
     let kRowsCount = 10
     
@@ -25,6 +27,7 @@ class HomeViewController: UITableViewController {
         
         createCellHeightsArray()
         self.tableView.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
+        
     }
     
     // MARK: configure
@@ -34,10 +37,13 @@ class HomeViewController: UITableViewController {
         }
     }
     
+    func loadMeetings(){
+        
+    }
     // MARK: - Table view data source
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return meetingStore.getMeetings().count
     }
     
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
@@ -47,19 +53,27 @@ class HomeViewController: UITableViewController {
         }
         
         cell.backgroundColor = UIColor.clearColor()
-        
         if cellHeights[indexPath.row] == kCloseCellHeight {
             cell.selectedAnimation(false, animated: false, completion:nil)
         } else {
             cell.selectedAnimation(true, animated: false, completion: nil)
         }
         
-        cell.number = indexPath.row
+        //cell.number = indexPath.row
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cellIdentifier = "FoldingCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! DemoCell
+        
+        let meeting = meetingStore.getMeetings()[indexPath.row]
+        cell.meetingRoom.text = meeting.room
+        cell.startTime.text = meeting.from.componentsSeparatedByString(" ")[1]
+        cell.meetingStartTime.text = meeting.from
+        cell.meetingOrganizor.text = meeting.host
+        cell.meetingEndTime.text = meeting.to
+        cell.meetingTitle.text = meeting.subject
+        
         return cell
     }
     
@@ -94,5 +108,12 @@ class HomeViewController: UITableViewController {
             }, completion: nil)
         
         
+    }
+    
+    //Mark : Actions
+    
+    @IBAction func InvitePeople(sender: UIButton) {
+       let tabViewController = self.navigationController?.viewControllers[0] as! TabViewController
+        tabViewController.selectedIndex = 1
     }
 }
