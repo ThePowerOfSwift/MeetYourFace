@@ -33,11 +33,11 @@
     "attendees": ["7", "8", "9"]
   },
   "4": {
-    "subject": "",
+    "subject": "Hackthon meeting 3",
     "room": "Room Singapore Solaris 11413 Raffles Place (8)",
     "from": "2015-09-06 10:30",
     "to": "2015-09-06 13:00",
-    "host": "",
+    "host": "3",
     "accpeted": "3",
     "denied": "4",
     "pending": "2",
@@ -59,7 +59,7 @@
     "room": "Room Singapore Solaris 11413 Raffles Place (8)",
     "from": "2015-09-06 15:00",
     "to": "2015-09-06 16:00",
-    "host": "",
+    "host": "3",
     "accpeted": "3",
     "denied": "4",
     "pending": "2",

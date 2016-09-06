@@ -12,20 +12,14 @@ import FoldingCell
 class DemoCell: FoldingCell {
     
     @IBOutlet weak var startTime: UILabel!
-    @IBOutlet weak var meetingRoom: UILabel!
-    
-    @IBOutlet weak var location: UILabel!
     @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var location: UILabel!
+    @IBOutlet weak var organizorEmail: UILabel!
     @IBOutlet weak var meetingTitle: UILabel!
     @IBOutlet weak var meetingOrganizor: UILabel!
-    
-    @IBOutlet weak var organizorEmail: UILabel!
-    @IBOutlet weak var meetingStartTime: UILabel!
-    
     @IBOutlet weak var meetingEndTime: UILabel!
-    
+    @IBOutlet weak var meetingStartTime: UILabel!
     @IBOutlet weak var meetingRoomImg: UIImageView!
-    
     @IBOutlet weak var avatar: UIImageView!
     
     override func awakeFromNib() {
