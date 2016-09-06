@@ -8,5 +8,6 @@ target 'MeetYourFace' do
     pod 'Cartography', :git => "https://github.com/robb/Cartography.git", :tag => '0.6.0'
     pod 'LFLoginController'
     pod 'SwiftyJSON'
+    pod 'FoldingCell'
 end
 
