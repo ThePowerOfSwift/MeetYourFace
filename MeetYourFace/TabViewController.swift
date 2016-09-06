@@ -18,6 +18,7 @@ class TabViewController: UITabBarController, UITabBarControllerDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        delegate = self
 //        loginController.delegate = self
 //        loginController.logo = UIImage(named: "Autodesklogo")
 //        loginController.videoURL = NSBundle.mainBundle().URLForResource("AutodeskShow", withExtension: "mp4")!
@@ -120,7 +121,8 @@ class TabViewController: UITabBarController, UITabBarControllerDelegate{
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    */    
+    
 }
 
 extension TabViewController: LFLoginControllerDelegate {

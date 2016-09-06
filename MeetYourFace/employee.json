@@ -1,101 +1,121 @@
 {
   "1": {
     "name": "Siyuan Liu",
+    "image": "siyuan",
     "email": "siyuan.liu@autodesk.com",
     "schedule": ["1"]
   },
   "2": {
     "name": "Zhaoyang Ma",
+    "image": "randy",
     "email": "zhaoyang.ma@autodesk.com",
     "schedule": ["1"]
   },
   "3": {
     "name": "Peter Tang",
+    "image": "peter",
     "email": "peter.tang@autodesk.com",
     "schedule": ["1", "3", "9"]
   },
   "4": {
     "name": "Lekai Xie",
+    "image": "lekai",
     "email": "lekai.xie@autodesk.com",
     "schedule": ["1"]
   },
   "5": {
     "name": "Zhimon Chan",
+    "image": "zhimon",
     "email": "zhimon.chan@autodesk.com",
     "schedule": ["1"]
   },
   "6": {
     "name": "Minqi Zhang",
+    "image": "minqi",
     "email": "minqi.zhang@autodesk.com",
     "schedule": []
   },
   "7": {
     "name": "Mason Myers",
+    "image": "Autodesklogo",
     "email": "mason.myers@autodesk.com",
     "schedule": ["2", "3"]
   },
   "8": {
     "name": "Simon Jones",
+    "image": "Autodesklogo",
     "email": "simon.jones@autodesk.com",
     "schedule": ["2", "3"]
   },
   "9": {
     "name": "Anand Joshi",
+    "image": "Autodesklogo",
     "email": "anand.joshi@autodesk.com",
     "schedule": ["2", "3"]
   },
   "10": {
     "name": "Ada Yan",
+    "image": "Autodesklogo",
     "email": "ada.yan@autodesk.com",
     "schedule": ["5"]
   },
   "11": {
     "name": "Andrey Bobrov",
+    "image": "Autodesklogo",
     "email": "andrey.bobrov@autodesk.com",
     "schedule": ["5"]
   },
   "12": {
     "name": "Trevor Wekel",
+    "image": "Autodesklogo",
     "email": "trevor.wekel@autodesk.com",
     "schedule": ["5"]
   },
   "13": {
     "name": "Kaycee Ng",
+    "image": "Autodesklogo",
     "email": "kaycee.ng@autodesk.com",
     "schedule": ["5"]
   },
   "14": {
     "name": "Emile Kfouri",
+    "image": "Autodesklogo",
     "email": "emile.kfouri@autodesk.com",
     "schedule": ["5"]
   },
   "15": {
     "name": "Evan Casey",
+    "image": "Autodesklogo",
     "email": "evan.casey@autodesk.com",
     "schedule": ["5"]
   },
   "16": {
     "name": "Mike Tessier",
+    "image": "Autodesklogo",
     "email": "mike.tessier@autodesk.com",
     "schedule": ["7"]
   },
   "17": {
     "name": "Mark Chan",
+    "image": "Autodesklogo",
     "email": "mark.chan@autodesk.com",
     "schedule": ["7"]
   },
   "18": {
     "name": "Elizabeth Katzki",
+    "image": "Autodesklogo",
     "email": "elizabeth.katzki@autodesk.com",
     "schedule": ["7"]
   },
   "19": {
     "name": "Justin Hoey",
+    "image": "Autodesklogo",
     "email": "justin.hoey@autodesk.com",
     "schedule": ["7"]
   },
   "20": {
     "name": "Richard Howard",
+    "image": "Autodesklogo",
     "email": "richard.howard@autodesk.com",
     "schedule": ["7", "9"]
   }
