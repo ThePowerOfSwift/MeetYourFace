@@ -15,14 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        let viewController = LogInViewController()
-        
-        let mainWindow = UIWindow(frame: UIScreen.mainScreen().bounds)
-        
-        mainWindow.backgroundColor = UIColor.whiteColor()
-        mainWindow.rootViewController = viewController
-        mainWindow.makeKeyAndVisible()
-        window = mainWindow
+//        let viewController = TabViewController()
+//        let loginViewController = LoginViewController()
+//        let mainWindow = UIWindow(frame: UIScreen.mainScreen().bounds)
+//        
+//        mainWindow.backgroundColor = UIColor.whiteColor()
+//        mainWindow.rootViewController = viewController
+//        mainWindow.rootViewController?.presentViewController(loginViewController, animated: true, completion: nil)
+//        mainWindow.makeKeyAndVisible()
+//        window = mainWindow
         // Override point for customization after application launch.
         return true
     }
