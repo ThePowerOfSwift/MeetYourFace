@@ -89,6 +89,7 @@
 		43020FBF1D7285C5007CC830 /* MeetYourFace */ = {
 			isa = PBXGroup;
 			children = (
+				432CF1E21D7F87B400A41CE4 /* InstanceAdd */,
 				43D53D581D7EB1D600062093 /* InstantMeeting */,
 				43D53D551D7EA14900062093 /* asset */,
 				43D53D541D7EA13C00062093 /* data */,
@@ -104,11 +105,18 @@
 				43020FCC1D7285C5007CC830 /* Info.plist */,
 				43020FC01D7285C5007CC830 /* AppDelegate.swift */,
 				43020FD21D7290B0007CC830 /* TabViewController.swift */,
-				43020FD41D729C31007CC830 /* FaceViewController.swift */,
-				43020FD61D729C42007CC830 /* HomeViewController.swift */,
 				433BA4081D747C7900CB54E3 /* SettingsViewController.swift */,
 			);
 			path = MeetYourFace;
+			sourceTree = "<group>";
+		};
+		432CF1E21D7F87B400A41CE4 /* InstanceAdd */ = {
+			isa = PBXGroup;
+			children = (
+				43020FD61D729C42007CC830 /* HomeViewController.swift */,
+				43020FD41D729C31007CC830 /* FaceViewController.swift */,
+			);
+			name = InstanceAdd;
 			sourceTree = "<group>";
 		};
 		43D53D521D7EA10500062093 /* model */ = {
