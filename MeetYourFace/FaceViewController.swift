@@ -219,6 +219,11 @@ class FaceViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
         if featuresCount == 0 {
             if foundFace {
                 showText("Mingqi Zhang", sublayers: sublayers!)
+                let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(3 * Double(NSEC_PER_SEC)))
+                dispatch_after(delayTime, dispatch_get_main_queue()) {
+                    self.callback!()
+                    self.dismissViewControllerAnimated(false, completion: nil)
+                }
             }
             CATransaction.commit()
             return
