@@ -7,6 +7,8 @@ use_frameworks!
 target 'MeetYourFace' do
     pod 'Cartography', :git => "https://github.com/robb/Cartography.git", :tag => '0.6.0'
     pod 'LFLoginController'
+    pod 'FoldingCell'
+    pod 'EasyPeasy'
     pod 'SwiftyJSON'
     pod 'FoldingCell'
 end

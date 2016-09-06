@@ -25,6 +25,8 @@
 		43D53D511D7EA0CD00062093 /* InstantScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D53D501D7EA0CD00062093 /* InstantScanViewController.swift */; };
 		9DA1DFA8B2178AF1EDF52FB2 /* Pods_MeetYourFace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA02632EAEE0C6AEC8C75D5 /* Pods_MeetYourFace.framework */; };
 		C38C5D9D1D7DC0B100489CDB /* AutodeskShow.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C38C5D9C1D7DC0B100489CDB /* AutodeskShow.mp4 */; };
+		C38C5D9F1D7E66C800489CDB /* DemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C5D9E1D7E66C800489CDB /* DemoCell.swift */; };
+		C38C5DA91D7E6B3900489CDB /* ConfigurationBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C5DA81D7E6B3900489CDB /* ConfigurationBlock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,9 @@
 		76EFE06D6F6E980BC9F700D5 /* Pods-MeetYourFace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetYourFace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeetYourFace/Pods-MeetYourFace.debug.xcconfig"; sourceTree = "<group>"; };
 		ABA02632EAEE0C6AEC8C75D5 /* Pods_MeetYourFace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeetYourFace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38C5D9C1D7DC0B100489CDB /* AutodeskShow.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AutodeskShow.mp4; sourceTree = "<group>"; };
+		C38C5D9E1D7E66C800489CDB /* DemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCell.swift; sourceTree = "<group>"; };
+		C38C5DA81D7E6B3900489CDB /* ConfigurationBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationBlock.swift; sourceTree = "<group>"; };
+		DE03A59327EB65B4F4E39C0C /* Pods-MeetYourFace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetYourFace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeetYourFace/Pods-MeetYourFace.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +94,10 @@
 				43D53D541D7EA13C00062093 /* data */,
 				43D53D531D7EA12200062093 /* store */,
 				43D53D521D7EA10500062093 /* model */,
+				C38C5DA81D7E6B3900489CDB /* ConfigurationBlock.swift */,
+				43D53D441D7E8E9600062093 /* meeting.json */,
+				43D53D421D7E8E7300062093 /* employee.json */,
+				C38C5D9C1D7DC0B100489CDB /* AutodeskShow.mp4 */,
 				43020FC71D7285C5007CC830 /* Assets.xcassets */,
 				43020FC41D7285C5007CC830 /* Main.storyboard */,
 				43020FC91D7285C5007CC830 /* LaunchScreen.storyboard */,
@@ -107,6 +116,7 @@
 		43D53D521D7EA10500062093 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				C38C5D9E1D7E66C800489CDB /* DemoCell.swift */,
 				43D53D461D7E8EC400062093 /* Employee.swift */,
 				43D53D481D7E8F9E00062093 /* Meeting.swift */,
 			);
@@ -303,11 +313,13 @@
 				43020FD31D7290B0007CC830 /* TabViewController.swift in Sources */,
 				43020FD51D729C31007CC830 /* CameraViewController.swift in Sources */,
 				43D53D511D7EA0CD00062093 /* InstantScanViewController.swift in Sources */,
+				C38C5D9F1D7E66C800489CDB /* DemoCell.swift in Sources */,
 				43D53D4B1D7E907F00062093 /* EmployeeStore.swift in Sources */,
 				43D53D4D1D7E920900062093 /* MeetingStore.swift in Sources */,
 				43D53D471D7E8EC400062093 /* Employee.swift in Sources */,
 				43020FC31D7285C5007CC830 /* LoginViewController.swift in Sources */,
 				43020FC11D7285C5007CC830 /* AppDelegate.swift in Sources */,
+				C38C5DA91D7E6B3900489CDB /* ConfigurationBlock.swift in Sources */,
 				433BA4091D747C7900CB54E3 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
