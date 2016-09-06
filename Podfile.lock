@@ -4,17 +4,14 @@ PODS:
   - EasyPeasy (1.2.1)
   - FoldingCell (1.0.0)
   - LFLoginController (0.2.3):
-    - 1PasswordExtension (= 1.8.2)
+  - 1PasswordExtension (= 1.8.2)
 
 DEPENDENCIES:
   - Cartography (from `https://github.com/robb/Cartography.git`, tag `0.6.0`)
   - EasyPeasy
-  - FoldingCell
-  - LFLoginController
-=======
   - FoldingCell (1.0.0)
   - LFLoginController (0.2.3):
-    - 1PasswordExtension (= 1.8.2)
+  - 1PasswordExtension (= 1.8.2)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
@@ -22,7 +19,6 @@ DEPENDENCIES:
   - FoldingCell
   - LFLoginController
   - SwiftyJSON
->>>>>>> d5fcee9dbdcecef8bf842c997c5a9f54bdeb68b6
 
 EXTERNAL SOURCES:
   Cartography:
