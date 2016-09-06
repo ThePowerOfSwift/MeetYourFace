@@ -16,13 +16,20 @@
 		43020FD51D729C31007CC830 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43020FD41D729C31007CC830 /* CameraViewController.swift */; };
 		43020FD71D729C42007CC830 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43020FD61D729C42007CC830 /* HomeViewController.swift */; };
 		433BA4091D747C7900CB54E3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BA4081D747C7900CB54E3 /* SettingsViewController.swift */; };
-		7E3D228A14F8AF13FD6076C4 /* Pods_MeetYourFace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712F09997B30E4B1A224085A /* Pods_MeetYourFace.framework */; };
+		43D53D431D7E8E7300062093 /* employee.json in Resources */ = {isa = PBXBuildFile; fileRef = 43D53D421D7E8E7300062093 /* employee.json */; };
+		43D53D451D7E8E9600062093 /* meeting.json in Resources */ = {isa = PBXBuildFile; fileRef = 43D53D441D7E8E9600062093 /* meeting.json */; };
+		43D53D471D7E8EC400062093 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D53D461D7E8EC400062093 /* Employee.swift */; };
+		43D53D491D7E8F9E00062093 /* Meeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D53D481D7E8F9E00062093 /* Meeting.swift */; };
+		43D53D4B1D7E907F00062093 /* EmployeeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D53D4A1D7E907F00062093 /* EmployeeStore.swift */; };
+		43D53D4D1D7E920900062093 /* MeetingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D53D4C1D7E920900062093 /* MeetingStore.swift */; };
+		9DA1DFA8B2178AF1EDF52FB2 /* Pods_MeetYourFace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA02632EAEE0C6AEC8C75D5 /* Pods_MeetYourFace.framework */; };
 		C38C5D9D1D7DC0B100489CDB /* AutodeskShow.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C38C5D9C1D7DC0B100489CDB /* AutodeskShow.mp4 */; };
 		C38C5D9F1D7E66C800489CDB /* DemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C5D9E1D7E66C800489CDB /* DemoCell.swift */; };
 		C38C5DA91D7E6B3900489CDB /* ConfigurationBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C5DA81D7E6B3900489CDB /* ConfigurationBlock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B97A465DAD4B04A424A09E4 /* Pods-MeetYourFace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetYourFace.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeetYourFace/Pods-MeetYourFace.release.xcconfig"; sourceTree = "<group>"; };
 		43020FBD1D7285C5007CC830 /* MeetYourFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetYourFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43020FC01D7285C5007CC830 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43020FC21D7285C5007CC830 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -34,8 +41,14 @@
 		43020FD41D729C31007CC830 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		43020FD61D729C42007CC830 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		433BA4081D747C7900CB54E3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		712F09997B30E4B1A224085A /* Pods_MeetYourFace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeetYourFace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFA1A8380B19DAFF54161A56 /* Pods-MeetYourFace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetYourFace.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeetYourFace/Pods-MeetYourFace.release.xcconfig"; sourceTree = "<group>"; };
+		43D53D421D7E8E7300062093 /* employee.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = employee.json; sourceTree = "<group>"; };
+		43D53D441D7E8E9600062093 /* meeting.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = meeting.json; sourceTree = "<group>"; };
+		43D53D461D7E8EC400062093 /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		43D53D481D7E8F9E00062093 /* Meeting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meeting.swift; sourceTree = "<group>"; };
+		43D53D4A1D7E907F00062093 /* EmployeeStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeStore.swift; sourceTree = "<group>"; };
+		43D53D4C1D7E920900062093 /* MeetingStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingStore.swift; sourceTree = "<group>"; };
+		76EFE06D6F6E980BC9F700D5 /* Pods-MeetYourFace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetYourFace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeetYourFace/Pods-MeetYourFace.debug.xcconfig"; sourceTree = "<group>"; };
+		ABA02632EAEE0C6AEC8C75D5 /* Pods_MeetYourFace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeetYourFace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38C5D9C1D7DC0B100489CDB /* AutodeskShow.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AutodeskShow.mp4; sourceTree = "<group>"; };
 		C38C5D9E1D7E66C800489CDB /* DemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCell.swift; sourceTree = "<group>"; };
 		C38C5DA81D7E6B3900489CDB /* ConfigurationBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationBlock.swift; sourceTree = "<group>"; };
@@ -47,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E3D228A14F8AF13FD6076C4 /* Pods_MeetYourFace.framework in Frameworks */,
+				9DA1DFA8B2178AF1EDF52FB2 /* Pods_MeetYourFace.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,8 +72,8 @@
 			children = (
 				43020FBF1D7285C5007CC830 /* MeetYourFace */,
 				43020FBE1D7285C5007CC830 /* Products */,
-				49C29377AAF99492E97420A8 /* Pods */,
-				A94AC6F8ABCECD773799F8F8 /* Frameworks */,
+				73283ED307F231C4768327A3 /* Pods */,
+				AE002568A7F61799CFB1AB74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				C38C5DA81D7E6B3900489CDB /* ConfigurationBlock.swift */,
+				43D53D441D7E8E9600062093 /* meeting.json */,
+				43D53D421D7E8E7300062093 /* employee.json */,
 				C38C5D9C1D7DC0B100489CDB /* AutodeskShow.mp4 */,
 				43020FC71D7285C5007CC830 /* Assets.xcassets */,
 				43020FC41D7285C5007CC830 /* Main.storyboard */,
@@ -88,23 +103,27 @@
 				43020FD61D729C42007CC830 /* HomeViewController.swift */,
 				433BA4081D747C7900CB54E3 /* SettingsViewController.swift */,
 				C38C5D9E1D7E66C800489CDB /* DemoCell.swift */,
+				43D53D461D7E8EC400062093 /* Employee.swift */,
+				43D53D481D7E8F9E00062093 /* Meeting.swift */,
+				43D53D4A1D7E907F00062093 /* EmployeeStore.swift */,
+				43D53D4C1D7E920900062093 /* MeetingStore.swift */,
 			);
 			path = MeetYourFace;
 			sourceTree = "<group>";
 		};
-		49C29377AAF99492E97420A8 /* Pods */ = {
+		73283ED307F231C4768327A3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DE03A59327EB65B4F4E39C0C /* Pods-MeetYourFace.debug.xcconfig */,
-				BFA1A8380B19DAFF54161A56 /* Pods-MeetYourFace.release.xcconfig */,
+				76EFE06D6F6E980BC9F700D5 /* Pods-MeetYourFace.debug.xcconfig */,
+				3B97A465DAD4B04A424A09E4 /* Pods-MeetYourFace.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		A94AC6F8ABCECD773799F8F8 /* Frameworks */ = {
+		AE002568A7F61799CFB1AB74 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				712F09997B30E4B1A224085A /* Pods_MeetYourFace.framework */,
+				ABA02632EAEE0C6AEC8C75D5 /* Pods_MeetYourFace.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,12 +135,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43020FCF1D7285C5007CC830 /* Build configuration list for PBXNativeTarget "MeetYourFace" */;
 			buildPhases = (
-				A09DFCFE7F566A2486A724EB /* [CP] Check Pods Manifest.lock */,
+				B72FD1987B751E925419F6B7 /* [CP] Check Pods Manifest.lock */,
 				43020FB91D7285C5007CC830 /* Sources */,
 				43020FBA1D7285C5007CC830 /* Frameworks */,
 				43020FBB1D7285C5007CC830 /* Resources */,
-				E1A0A1E3B96AAA1F82C9A89C /* [CP] Embed Pods Frameworks */,
-				7E3B30CA88F2949316ACAF55 /* [CP] Copy Pods Resources */,
+				29070CAADA5C57518B3F4EE7 /* [CP] Embed Pods Frameworks */,
+				3ABD6ECE39D610401C0D8531 /* [CP] Copy Pods Resources */,
+				0340793572B495389E820455 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,7 +164,7 @@
 				TargetAttributes = {
 					43020FBC1D7285C5007CC830 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = SR2M99X625;
+						DevelopmentTeam = QWD2QB5Q9R;
 					};
 				};
 			};
@@ -172,46 +192,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				C38C5D9D1D7DC0B100489CDB /* AutodeskShow.mp4 in Resources */,
+				43D53D451D7E8E9600062093 /* meeting.json in Resources */,
 				43020FCB1D7285C5007CC830 /* LaunchScreen.storyboard in Resources */,
 				43020FC81D7285C5007CC830 /* Assets.xcassets in Resources */,
 				43020FC61D7285C5007CC830 /* Main.storyboard in Resources */,
+				43D53D431D7E8E7300062093 /* employee.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7E3B30CA88F2949316ACAF55 /* [CP] Copy Pods Resources */ = {
+		0340793572B495389E820455 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeetYourFace/Pods-MeetYourFace-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeetYourFace/Pods-MeetYourFace-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A09DFCFE7F566A2486A724EB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		E1A0A1E3B96AAA1F82C9A89C /* [CP] Embed Pods Frameworks */ = {
+		29070CAADA5C57518B3F4EE7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -226,6 +233,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeetYourFace/Pods-MeetYourFace-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3ABD6ECE39D610401C0D8531 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeetYourFace/Pods-MeetYourFace-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B72FD1987B751E925419F6B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -234,9 +271,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				43020FD71D729C42007CC830 /* HomeViewController.swift in Sources */,
+				43D53D491D7E8F9E00062093 /* Meeting.swift in Sources */,
 				43020FD31D7290B0007CC830 /* TabViewController.swift in Sources */,
 				43020FD51D729C31007CC830 /* CameraViewController.swift in Sources */,
 				C38C5D9F1D7E66C800489CDB /* DemoCell.swift in Sources */,
+				43D53D4B1D7E907F00062093 /* EmployeeStore.swift in Sources */,
+				43D53D4D1D7E920900062093 /* MeetingStore.swift in Sources */,
+				43D53D471D7E8EC400062093 /* Employee.swift in Sources */,
 				43020FC31D7285C5007CC830 /* LoginViewController.swift in Sources */,
 				43020FC11D7285C5007CC830 /* AppDelegate.swift in Sources */,
 				C38C5DA91D7E6B3900489CDB /* ConfigurationBlock.swift in Sources */,
@@ -351,14 +392,14 @@
 		};
 		43020FD01D7285C5007CC830 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE03A59327EB65B4F4E39C0C /* Pods-MeetYourFace.debug.xcconfig */;
+			baseConfigurationReference = 76EFE06D6F6E980BC9F700D5 /* Pods-MeetYourFace.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MeetYourFace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lekai.MeetYourFace;
+				PRODUCT_BUNDLE_IDENTIFIER = liusy182.MeetYourFace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -367,14 +408,14 @@
 		};
 		43020FD11D7285C5007CC830 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFA1A8380B19DAFF54161A56 /* Pods-MeetYourFace.release.xcconfig */;
+			baseConfigurationReference = 3B97A465DAD4B04A424A09E4 /* Pods-MeetYourFace.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MeetYourFace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lekai.MeetYourFace;
+				PRODUCT_BUNDLE_IDENTIFIER = liusy182.MeetYourFace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;

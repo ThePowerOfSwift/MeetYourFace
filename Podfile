@@ -9,5 +9,7 @@ target 'MeetYourFace' do
     pod 'LFLoginController'
     pod 'FoldingCell'
     pod 'EasyPeasy'
+    pod 'SwiftyJSON'
+    pod 'FoldingCell'
 end
 

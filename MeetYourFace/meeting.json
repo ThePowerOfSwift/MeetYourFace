@@ -1,0 +1,74 @@
+{
+  "1": {
+    "subject": "Group Hackathon",
+    "room": "Room Singapore Solaris 11413 Raffles Place (8)",
+    "from": "2015-09-06 09:30",
+    "to": "2015-09-06 13:00",
+    "host": "3",
+    "attendees": ["1", "2", "3", "4", "5"]
+  },
+  "2": {
+    "subject": "Client Daily Standup",
+    "room": "Room Singapore Solaris 11413 Raffles Place (8)",
+    "from": "2015-09-06 09:00",
+    "to": "2015-09-06 09:30",
+    "host": "8",
+    "attendees": ["7", "8", "9"]
+  },
+  "3": {
+    "subject": "Cross site sync up",
+    "room": "Room Singapore Solaris 11413 Raffles Place (8)",
+    "from": "2015-09-06 09:30",
+    "to": "2015-09-06 10:30",
+    "host": "9",
+    "attendees": ["7", "8", "9"]
+  },
+  "4": {
+    "subject": "",
+    "room": "Room Singapore Solaris 11413 Raffles Place (8)",
+    "from": "2015-09-06 10:30",
+    "to": "2015-09-06 13:00",
+    "host": "",
+    "attendees": []
+  },
+  "5": {
+    "subject": "Security Scrum User Story Grooming",
+    "room": "Room Singapore Solaris 11413 Raffles Place (8)",
+    "from": "2015-09-06 13:00",
+    "to": "2015-09-06 15:00",
+    "host": "10",
+    "attendees": ["10", "11", "12", "13", "14", "15"]
+  },
+  "6": {
+    "subject": "",
+    "room": "Room Singapore Solaris 11413 Raffles Place (8)",
+    "from": "2015-09-06 15:00",
+    "to": "2015-09-06 16:00",
+    "host": "",
+    "attendees": []
+  },
+  "7": {
+    "subject": "Birthday Celebration",
+    "room": "Room Singapore Solaris 11413 Raffles Place (8)",
+    "from": "2015-09-06 16:00",
+    "to": "2015-09-06 17:00",
+    "host": "16",
+    "attendees": ["16", "17", "18", "19", "20"]
+  },
+  "8": {
+    "subject": "BRE integration discussion",
+    "room": "Room Singapore Solaris 11412 Orchard Road (8)",
+    "from": "2015-09-06 13:30",
+    "to": "2015-09-06 14:30",
+    "host": "3",
+    "attendees": ["3"]
+  },
+  "9": {
+    "subject": "Team Bi-Weekly Meeting",
+    "room": "Room Singapore Solaris 11411 Commonwealth (9)",
+    "from": "2015-09-06 15:00",
+    "to": "2015-09-06 17:00",
+    "host": "20",
+    "attendees": ["3", "20"]
+  },
+}
