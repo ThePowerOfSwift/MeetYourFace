@@ -8,14 +8,20 @@
 
 import UIKit
 import Cartography
+import LFLoginController
 
-class TabViewController: UITabBarController, UITabBarControllerDelegate {
+class TabViewController: UITabBarController, UITabBarControllerDelegate{
+    let loginController = LFLoginController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        delegate = self;
+        loginController.delegate = self
+        loginController.logo = UIImage(named: "Autodesklogo")
+        loginController.videoURL = NSBundle.mainBundle().URLForResource("AutodeskShow", withExtension: "mp4")!
+
+        self.navigationController?.pushViewController(loginController, animated: true)
         setup()
-        // Do any additional setup after loading the view.
+        //Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,7 +30,7 @@ class TabViewController: UITabBarController, UITabBarControllerDelegate {
     }
     
     private func setup() {
-//        view.backgroundColor = UIColor.grayColor()
+        self.view.backgroundColor = UIColor.whiteColor()
         let homeViewController = HomeViewController()
         let homeIcon = UITabBarItem(
             title: "Meetings",
@@ -68,5 +74,30 @@ class TabViewController: UITabBarController, UITabBarControllerDelegate {
         // Pass the selected object to the new view controller.
     }
     */
+}
 
+extension TabViewController: LFLoginControllerDelegate {
+    
+    func loginDidFinish(email: String, password: String, type: LFLoginController.SendType) {
+        
+        // Implement your server call here
+        
+        print(email)
+        print(password)
+        print(type)
+        
+        // Example
+        if type == .Login && password != "1234" {
+            
+            loginController.wrongInfoShake()
+        } else {
+            
+            navigationController?.popViewControllerAnimated(true)
+        }
+    }
+    
+    func forgotPasswordTapped() {
+        
+        print("forgot password")
+    }
 }
