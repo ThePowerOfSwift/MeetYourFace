@@ -121,6 +121,25 @@ class HomeViewController: UITableViewController {
     }
     
     func faceDetectionFinished() {
+        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(0.5 * Double(NSEC_PER_SEC)))
+        dispatch_after(delayTime, dispatch_get_main_queue()) {
+            self.alert()
+        }
+        
         print("faceDetectionFinished")
+    }
+    
+    func alert() {
+        let alertController = UIAlertController(title: "Sucess!", message: "Meeting invitation has been sent to Mingqi Zhang", preferredStyle: .Alert)
+        
+        // Create the actions
+        let okAction = UIAlertAction(title: "OK",
+                                     style: UIAlertActionStyle.Default,
+                                     handler: nil)
+        // Add the actions
+        alertController.addAction(okAction)
+        
+        // Present the controller
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
 }
