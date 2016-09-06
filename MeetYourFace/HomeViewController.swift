@@ -115,7 +115,12 @@ class HomeViewController: UITableViewController {
     //Mark : Actions
     
     @IBAction func InvitePeople(sender: UIButton) {
-       let cameraviewController = CameraViewController()
-       self.presentViewController(cameraviewController, animated: false, completion: nil)
+        let vc = FaceViewController()
+        vc.callback = self.faceDetectionFinished
+        presentViewController(vc, animated: false, completion: nil)
+    }
+    
+    func faceDetectionFinished() {
+        print("faceDetectionFinished")
     }
 }
