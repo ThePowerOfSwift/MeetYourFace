@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		252B2DAC1D7E76FD00B559E0 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 252B2DAB1D7E76FD00B559E0 /* data.json */; };
 		43020FC11D7285C5007CC830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43020FC01D7285C5007CC830 /* AppDelegate.swift */; };
 		43020FC31D7285C5007CC830 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43020FC21D7285C5007CC830 /* LoginViewController.swift */; };
 		43020FC61D7285C5007CC830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43020FC41D7285C5007CC830 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		252B2DAB1D7E76FD00B559E0 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		3B97A465DAD4B04A424A09E4 /* Pods-MeetYourFace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetYourFace.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeetYourFace/Pods-MeetYourFace.release.xcconfig"; sourceTree = "<group>"; };
 		43020FBD1D7285C5007CC830 /* MeetYourFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetYourFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43020FC01D7285C5007CC830 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 		43020FBF1D7285C5007CC830 /* MeetYourFace */ = {
 			isa = PBXGroup;
 			children = (
+				252B2DAB1D7E76FD00B559E0 /* data.json */,
 				C38C5D9C1D7DC0B100489CDB /* AutodeskShow.mp4 */,
 				43020FC71D7285C5007CC830 /* Assets.xcassets */,
 				43020FC41D7285C5007CC830 /* Main.storyboard */,
@@ -168,6 +171,7 @@
 				C38C5D9D1D7DC0B100489CDB /* AutodeskShow.mp4 in Resources */,
 				43020FCB1D7285C5007CC830 /* LaunchScreen.storyboard in Resources */,
 				43020FC81D7285C5007CC830 /* Assets.xcassets in Resources */,
+				252B2DAC1D7E76FD00B559E0 /* data.json in Resources */,
 				43020FC61D7285C5007CC830 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
