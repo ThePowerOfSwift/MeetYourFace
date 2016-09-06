@@ -1,8 +1,14 @@
 PODS:
+  - 1PasswordExtension (1.8.2)
   - Cartography (0.5.0)
+  - LFLoginController (0.2.3):
+    - 1PasswordExtension (= 1.8.2)
+  - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Cartography (from `https://github.com/robb/Cartography.git`, tag `0.6.0`)
+  - LFLoginController
+  - SwiftyJSON
 
 EXTERNAL SOURCES:
   Cartography:
@@ -15,6 +21,11 @@ CHECKOUT OPTIONS:
     :tag: 0.6.0
 
 SPEC CHECKSUMS:
+  1PasswordExtension: 303f2b7bbf6dc19ede3090bd6b5987530648d687
   Cartography: 314f5ed1495995760487161eeb7a8a0940d88ad3
+  LFLoginController: d925f6c8dd83b21c61f2b5816d3a0ea6dfe3a711
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: f47fb6748e9b69c04a10b83a45579c16c9ab2447
+
+COCOAPODS: 1.0.1
