@@ -19,11 +19,11 @@ class TabViewController: UITabBarController, UITabBarControllerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
-//        loginController.delegate = self
-//        loginController.logo = UIImage(named: "Autodesklogo")
-//        loginController.videoURL = NSBundle.mainBundle().URLForResource("AutodeskShow", withExtension: "mp4")!
-//
-//        self.navigationController?.pushViewController(loginController, animated: true)
+        loginController.delegate = self
+        loginController.logo = UIImage(named: "Autodesklogo")
+        loginController.videoURL = NSBundle.mainBundle().URLForResource("AutodeskShow", withExtension: "mp4")!
+
+        self.navigationController?.pushViewController(loginController, animated: true)
         setup()
         //Do any additional setup after loading the view.
     }
