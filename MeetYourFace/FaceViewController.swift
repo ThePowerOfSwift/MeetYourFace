@@ -38,6 +38,8 @@ class FaceViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
     
     private var foundFace = false
     private var dispatchingFoundFace = false
+    private var dismissDispatched = false
+    private var personName = "Minqi Zhang"
     
     
     override func viewDidLoad() {
@@ -218,11 +220,14 @@ class FaceViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
         
         if featuresCount == 0 {
             if foundFace {
-                showText("Mingqi Zhang", sublayers: sublayers!)
-                let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(3 * Double(NSEC_PER_SEC)))
-                dispatch_after(delayTime, dispatch_get_main_queue()) {
-                    self.callback!()
-                    self.dismissViewControllerAnimated(false, completion: nil)
+                showText(personName, sublayers: sublayers!)
+                if !dismissDispatched {
+                    dismissDispatched = true
+                    let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(2 * Double(NSEC_PER_SEC)))
+                    dispatch_after(delayTime, dispatch_get_main_queue()) {
+                        self.callback!()
+                        self.dismissViewControllerAnimated(false, completion: nil)
+                    }
                 }
             }
             CATransaction.commit()
@@ -249,7 +254,7 @@ class FaceViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
                 
                 if(!foundFace && !dispatchingFoundFace) {
                     dispatchingFoundFace = true
-                    showText("Checking", sublayers: sublayers!)
+                    showText("Matching...", sublayers: sublayers!)
                     let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(5 * Double(NSEC_PER_SEC)))
                     dispatch_after(delayTime, dispatch_get_main_queue()) {
                         self.foundFace = true
@@ -303,11 +308,14 @@ class FaceViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
                     CGAffineTransformMakeRotation(0))
                 
                 if foundFace {
-                    showText("Mingqi Zhang", sublayers: sublayers!)
-                    let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(3 * Double(NSEC_PER_SEC)))
-                    dispatch_after(delayTime, dispatch_get_main_queue()) {
-                        self.callback!()
-                        self.dismissViewControllerAnimated(false, completion: nil)
+                    showText(personName, sublayers: sublayers!)
+                    if !dismissDispatched {
+                        dismissDispatched = true;
+                        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(2 * Double(NSEC_PER_SEC)))
+                        dispatch_after(delayTime, dispatch_get_main_queue()) {
+                            self.callback!()
+                            self.dismissViewControllerAnimated(false, completion: nil)
+                        }
                     }
                 } else {
                     showText("Checking", sublayers: sublayers!)
