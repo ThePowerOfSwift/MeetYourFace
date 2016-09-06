@@ -33,7 +33,8 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         ofType: CIDetectorTypeFace,
         context:nil,
         options:[ CIDetectorAccuracy: CIDetectorAccuracyLow ])
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
@@ -215,12 +216,12 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
                 faceRect.origin.x *= widthScaleBy
                 faceRect.origin.y *= heightScaleBy
 
-                if false {//isMirrored
-                    faceRect = CGRectOffset(faceRect, previewBox.origin.x + previewBox.size.width - faceRect.size.width - (faceRect.origin.x * 2), previewBox.origin.y)
-                }
-                else {
+//                if false {//isMirrored
+//                    faceRect = CGRectOffset(faceRect, previewBox.origin.x + previewBox.size.width - faceRect.size.width - (faceRect.origin.x * 2), previewBox.origin.y)
+//                }
+//                else {
                     faceRect = CGRectOffset(faceRect, previewBox.origin.x, previewBox.origin.y)
-                }
+                //}
                 
                 var featureLayer: CALayer?
                 
@@ -241,7 +242,7 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
                     featureLayer!.contents = borderImage!.CGImage
                     featureLayer!.name = "FaceLayer"
                     previewLayer.addSublayer(featureLayer!)
-                    featureLayer = nil
+                    //featureLayer = nil
                 }
                 featureLayer?.frame = faceRect
                 featureLayer?.setAffineTransform(
@@ -270,18 +271,18 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
             exifOrientation = ExifOrientation.PHOTOS_EXIF_0ROW_LEFT_0COL_BOTTOM;
             break;
         case .LandscapeLeft:       // Device oriented horizontally, home button on the right
-            if false {// (self.isUsingFrontFacingCamera)
-                exifOrientation = ExifOrientation.PHOTOS_EXIF_0ROW_BOTTOM_0COL_RIGHT;
-            } else {
+//            if false {// (self.isUsingFrontFacingCamera)
+//                exifOrientation = ExifOrientation.PHOTOS_EXIF_0ROW_BOTTOM_0COL_RIGHT;
+//            } else {
                 exifOrientation = ExifOrientation.PHOTOS_EXIF_0ROW_TOP_0COL_LEFT;
-            }
+            //}
             break;
         case .LandscapeRight:      // Device oriented horizontally, home button on the left
-            if false { //(self.isUsingFrontFacingCamera)
-                exifOrientation = ExifOrientation.PHOTOS_EXIF_0ROW_TOP_0COL_LEFT;
-            } else {
+//            if false { //(self.isUsingFrontFacingCamera)
+//                exifOrientation = ExifOrientation.PHOTOS_EXIF_0ROW_TOP_0COL_LEFT;
+//            } else {
                 exifOrientation = ExifOrientation.PHOTOS_EXIF_0ROW_BOTTOM_0COL_RIGHT;
-            }
+            //}
             break;
         case .Portrait:
             exifOrientation = ExifOrientation.PHOTOS_EXIF_0ROW_RIGHT_0COL_TOP
