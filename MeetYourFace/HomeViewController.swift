@@ -67,13 +67,15 @@ class HomeViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! DemoCell
         
         let meeting = meetingStore.getMeetings()[indexPath.row]
-        cell.meetingRoom.text = meeting.room
         cell.startTime.text = meeting.from.componentsSeparatedByString(" ")[1]
-        cell.meetingStartTime.text = meeting.from
-        cell.meetingOrganizor.text = meeting.host
-        cell.meetingEndTime.text = meeting.to
+        cell.title.text = meeting.subject
+        cell.location.text = meeting.room
         cell.meetingTitle.text = meeting.subject
-        
+        cell.meetingStartTime.text = meeting.from
+        cell.meetingOrganizor.text = employeeStore.getEmployee(meeting.host)?.name
+        cell.organizorEmail.text = employeeStore.getEmployee(meeting.host)?.email
+        cell.meetingEndTime.text = meeting.to
+        cell.avatar.image = UIImage(named:(employeeStore.getEmployee(meeting.host)!.image))!
         return cell
     }
     
@@ -113,8 +115,6 @@ class HomeViewController: UITableViewController {
     //Mark : Actions
     
     @IBAction func InvitePeople(sender: UIButton) {
-//       let tabViewController = self.navigationController?.viewControllers[0] as! TabViewController
-//        tabViewController.selectedIndex = 1
         let vc = FaceViewController()
         vc.callback = self.faceDetectionFinished
         presentViewController(vc, animated: false, completion: nil)
