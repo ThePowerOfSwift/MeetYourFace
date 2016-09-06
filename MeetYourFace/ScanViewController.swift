@@ -26,6 +26,8 @@ class ScanViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
     
     private var foundFace = false
     private var dispatchingFoundFace = false
+    private var updatingText = false
+    private var checkText = ""
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -168,9 +170,9 @@ class ScanViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
             if layer.name == "SquareLayer" {
                 layer.hidden = true
             }
-            if layer.name == "TextLayer" {
-                layer.hidden = true
-            }
+//            if layer.name == "TextLayer" {
+//                layer.hidden = true
+//            }
         }
         if featuresCount == 0 {
             //print("no square")
@@ -227,7 +229,7 @@ class ScanViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
                 faceRect = CGRectOffset(faceRect, previewBox.origin.x, previewBox.origin.y)
                 //}
                 
-                var featureLayer: CALayer?
+                var featureLayer: CAShapeLayer?
                 var textLayer: CATextLayer?
                 
                 // re-use an existing layer if possible
@@ -235,12 +237,13 @@ class ScanViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
                     let currentLayer = sublayers![currentSublayer]
                     currentSublayer += 1
                     if currentLayer.name == "SquareLayer" {
-                        featureLayer = currentLayer
+                        featureLayer = currentLayer as? CAShapeLayer
                         currentLayer.hidden = false
                     }
                     if currentLayer.name == "TextLayer" {
                         if let layer = currentLayer as? CATextLayer {
                             textLayer = layer
+                            textLayer!.string = checkText
                             currentLayer.hidden = false
                         }
                     }
@@ -248,9 +251,19 @@ class ScanViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
                 
                 // create a new one if necessary
                 if (featureLayer == nil) {
-                    featureLayer = CALayer()
-                    featureLayer!.contents = borderImage!.CGImage
+                    
+                    let gray = UIColor(red: 204.0/255.0, green: 204.0/255.0, blue: 204.0/255.0, alpha: 0.5)
+
+                    featureLayer = CAShapeLayer()
+                    featureLayer?.fillColor = gray.CGColor
+//                    featureLayer!.contents = borderImage!.CGImage
                     featureLayer!.name = "SquareLayer"
+
+                    // Create the path.
+                    let path = UIBezierPath(rect: CGRect(x: 0, y: 0, width: faceRect.size.width, height: faceRect.size.height))
+                    featureLayer?.fillRule = kCAFillRuleEvenOdd
+                    featureLayer?.path = path.CGPath
+                    
                     previewLayer.addSublayer(featureLayer!)
                     //featureLayer = nil
                 }
@@ -262,7 +275,14 @@ class ScanViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
                 if (textLayer == nil) {
                     textLayer = CATextLayer()
                     textLayer!.fontSize = 22.0
-                    textLayer!.string = "Checking Raffles Place..."
+                    if(checkText == "" && !updatingText) {
+                        updatingText = true
+                        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(1 * Double(NSEC_PER_SEC)))
+                        dispatch_after(delayTime, dispatch_get_main_queue()) {
+                            self.checkText = "Checking Raffles Place..."
+                        }
+                    }
+                    textLayer!.string = checkText
                     //textLayer!.backgroundColor = UIColor(white: 0.2, alpha: 0.3).CGColor
 //                    let fontName: CFStringRef = "System 17.0"
 //                    textLayer!.font = CTFontCreateWithName(fontName, 12.0, nil)
