@@ -274,12 +274,12 @@ class ScanViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
                 
                 if (textLayer == nil) {
                     textLayer = CATextLayer()
-                    textLayer!.fontSize = 22.0
+                    textLayer!.fontSize = 16.0
                     if(checkText == "" && !updatingText) {
                         updatingText = true
                         let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(1 * Double(NSEC_PER_SEC)))
                         dispatch_after(delayTime, dispatch_get_main_queue()) {
-                            self.checkText = "Checking Raffles Place..."
+                            self.checkText = "Checking 11413 Raffles Place..."
                         }
                     }
                     textLayer!.string = checkText
