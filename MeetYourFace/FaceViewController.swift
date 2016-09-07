@@ -212,11 +212,11 @@ class FaceViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
                                forKey:kCATransactionDisableActions)
         
         // hide all the face layers
-        for layer in sublayers! {
-            if layer.name == "FaceLayer" {
-                layer.hidden = true
-            }
-        }
+//        for layer in sublayers! {
+//            if layer.name == "FaceLayer" {
+//                layer.hidden = true
+//            }
+//        }
         
         if featuresCount == 0 {
             if foundFace {
@@ -276,13 +276,8 @@ class FaceViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
                 faceRect.origin.x *= widthScaleBy
                 faceRect.origin.y *= heightScaleBy
 
-//                if false {//isMirrored
-//                    faceRect = CGRectOffset(faceRect, previewBox.origin.x + previewBox.size.width - faceRect.size.width - (faceRect.origin.x * 2), previewBox.origin.y)
-//                }
-//                else {
-                    faceRect = CGRectOffset(faceRect, previewBox.origin.x, previewBox.origin.y)
-                //}
-                
+                faceRect = CGRectOffset(faceRect, previewBox.origin.x, previewBox.origin.y)
+
                 var featureLayer: CALayer?
                 
                 // re-use an existing layer if possible

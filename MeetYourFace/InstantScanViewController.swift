@@ -23,15 +23,20 @@ class InstantScanViewController: UIViewController {
         super.viewDidLoad()
         setup()
         // Do any additional setup after loading the view.
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        
         if(isFirstLoad) {
             isFirstLoad = false
             let vc = ScanViewController()
             presentViewController(vc, animated: true, completion: nil)
         }
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+//        if(isFirstLoad) {
+//            isFirstLoad = false
+//            let vc = ScanViewController()
+//            presentViewController(vc, animated: true, completion: nil)
+//        }
         super.viewDidAppear(animated)
     }
     
