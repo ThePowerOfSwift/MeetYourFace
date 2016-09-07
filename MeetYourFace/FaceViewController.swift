@@ -318,7 +318,7 @@ class FaceViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
                         }
                     }
                 } else {
-                    showText("Checking", sublayers: sublayers!)
+                    showText("Matching...", sublayers: sublayers!)
                 }
                 
             }

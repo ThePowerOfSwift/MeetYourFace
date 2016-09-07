@@ -214,7 +214,7 @@
 				TargetAttributes = {
 					43020FBC1D7285C5007CC830 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = SR2M99X625;
+						DevelopmentTeam = QWD2QB5Q9R;
 					};
 				};
 			};
@@ -450,7 +450,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MeetYourFace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lekai.MeetYourFace;
+				PRODUCT_BUNDLE_IDENTIFIER = liusy182.MeetYourFace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -466,7 +466,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MeetYourFace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lekai.MeetYourFace;
+				PRODUCT_BUNDLE_IDENTIFIER = liusy182.MeetYourFace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
