@@ -49,11 +49,11 @@
             </objects>
             <point key="canvasLocation" x="698" y="718"/>
         </scene>
-        <!--Autodesk Meet-->
+        <!--Instant Meet-->
         <scene sceneID="7ds-AP-Szx">
             <objects>
                 <viewController id="Hph-cC-zGG" customClass="TabViewController" customModule="MeetYourFace" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Autodesk Meet" id="TPe-uk-Bfh"/>
+                    <navigationItem key="navigationItem" title="Instant Meet" id="TPe-uk-Bfh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b1g-z4-CA5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
