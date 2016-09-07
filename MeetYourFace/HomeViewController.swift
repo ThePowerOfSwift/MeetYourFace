@@ -24,7 +24,6 @@ class HomeViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         createCellHeightsArray()
         self.tableView.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
         
@@ -37,9 +36,6 @@ class HomeViewController: UITableViewController {
         }
     }
     
-    func loadMeetings(){
-        
-    }
     // MARK: - Table view data source
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -76,6 +72,12 @@ class HomeViewController: UITableViewController {
         cell.organizorEmail.text = employeeStore.getEmployee(meeting.host)?.email
         cell.meetingEndTime.text = meeting.to
         cell.avatar.image = UIImage(named:(employeeStore.getEmployee(meeting.host)!.image))!
+        cell.monthDay.text = meeting.monthDay.uppercaseString
+        cell.date.text = meeting.date.uppercaseString
+        cell.accepted.text = meeting.accepted
+        cell.denied.text = meeting.denied
+        cell.pending.text = meeting.pending
+
         return cell
     }
     

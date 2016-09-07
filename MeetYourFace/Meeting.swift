@@ -15,5 +15,10 @@ struct Meeting {
     let from: String
     let to: String
     let host: String
+    let monthDay: String
+    let date: String
+    let accepted: String
+    let denied: String
+    let pending: String
     let attendees: [String]
 }

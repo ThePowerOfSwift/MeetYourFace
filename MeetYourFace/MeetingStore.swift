@@ -31,13 +31,18 @@ class MeetingStore {
                 from: subJson["from"].stringValue,
                 to: subJson["to"].stringValue,
                 host: subJson["host"].stringValue,
+                monthDay: subJson["Date"].stringValue,
+                date: subJson["dayofweek"].stringValue,
+                accepted: subJson["accpeted"].stringValue,
+                denied: subJson["denied"].stringValue,
+                pending: subJson["pending"].stringValue,
                 attendees: subJson["attendees"].arrayValue.map { $0.string!}
                 ))
         }
     }
     
     func getMeetings() -> [Meeting] {
-        return meetings
+        return meetings.sort({ $0.id < $1.id })
     }
     
     func getMeeting(id: String) -> Meeting? {
@@ -48,4 +53,5 @@ class MeetingStore {
         }
         return nil
     }
+
 }

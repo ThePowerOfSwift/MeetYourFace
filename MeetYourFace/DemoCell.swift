@@ -21,6 +21,11 @@ class DemoCell: FoldingCell {
     @IBOutlet weak var meetingStartTime: UILabel!
     @IBOutlet weak var meetingRoomImg: UIImageView!
     @IBOutlet weak var avatar: UIImageView!
+    @IBOutlet weak var monthDay: UILabel!
+    @IBOutlet weak var date: UILabel!
+    @IBOutlet weak var accepted: UILabel!
+    @IBOutlet weak var denied: UILabel!
+    @IBOutlet weak var pending: UILabel!
     
     override func awakeFromNib() {
         

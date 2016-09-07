@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AN5-w5-3Cb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AN5-w5-3Cb">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -536,9 +536,12 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="StartTime" destination="J1E-nW-guh" id="xfY-RU-fbZ"/>
+                                    <outlet property="accepted" destination="bGp-26-Ohx" id="6cx-PD-6WD"/>
                                     <outlet property="avatar" destination="ETy-yr-TTo" id="o8Y-yx-5HG"/>
                                     <outlet property="containerView" destination="F8n-aa-vzT" id="fXT-EK-or0"/>
                                     <outlet property="containerViewTop" destination="TW2-wU-iaB" id="Cjb-mX-8oV"/>
+                                    <outlet property="date" destination="VMj-em-2Rg" id="duy-dj-bFU"/>
+                                    <outlet property="denied" destination="Jiu-RN-QvR" id="eai-kW-iRN"/>
                                     <outlet property="foregroundView" destination="Mgn-ig-tZQ" id="Y2x-kj-AI1"/>
                                     <outlet property="foregroundViewTop" destination="8h8-Bw-Fnk" id="4Ix-cz-fG5"/>
                                     <outlet property="location" destination="isU-qj-JRP" id="CDG-kl-gL1"/>
@@ -547,7 +550,9 @@
                                     <outlet property="meetingRoomImg" destination="AUb-mv-LFh" id="uv3-yM-TNd"/>
                                     <outlet property="meetingStartTime" destination="IOf-ym-LLI" id="Sl1-u8-chW"/>
                                     <outlet property="meetingTitle" destination="CQT-eq-tKC" id="kty-tl-tSJ"/>
+                                    <outlet property="monthDay" destination="veW-3a-v7H" id="Aha-52-xGP"/>
                                     <outlet property="organizorEmail" destination="UfI-Eo-TWf" id="uqG-5g-gkf"/>
+                                    <outlet property="pending" destination="X2P-V6-p6g" id="p5V-e5-oUv"/>
                                     <outlet property="title" destination="rC5-Zn-Iq8" id="3Ux-yo-HiU"/>
                                 </connections>
                             </tableViewCell>
