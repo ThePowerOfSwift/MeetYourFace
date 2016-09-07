@@ -136,7 +136,7 @@ extension TabViewController: LFLoginControllerDelegate {
         print(type)
         
         // Example
-        if type == .Login && password != "1234" {
+        if type == .Login && password.characters.count < 8 {
             
             loginController.wrongInfoShake()
         } else {
